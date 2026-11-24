@@ -7,3 +7,4 @@ tools/face/__pycache__/
 scrub_private.local.txt
 dist/
 publish/
+docs/implement-notes/
