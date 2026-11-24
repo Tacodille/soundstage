@@ -24,7 +24,9 @@ The **Status** tab tells you which of these are answering right now, and what to
 1. In game, `/xlsettings` > Experimental > Custom Plugin Repositories, add
    `https://raw.githubusercontent.com/Tacodille/soundstage-releases/main/repo.json` and save.
 2. `/xlplugins`, search for Soundstage, install.
-3. Install Stagehand and Brio from the same window if you haven't, and switch IPC on in Brio's settings.
+3. Brio is in Dalamud's own list, so install it from the same window and switch IPC on in its settings. Stagehand isn't:
+   add `https://github.com/universalconquistador/Stagehand/releases/latest/download/repo.json` as another custom
+   repository first, then install it from `/xlplugins` too.
 4. Go into GPose and type `/soundstage`.
 
 ### The ReShade add-on (optional, separate download)
