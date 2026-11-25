@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "library",
+  "name": "Library",
+  "description": "Two tall bookshelves side by side behind the subject, a high-back chair and a floor lamp at the side.",
+  "status": "untested",
+  "anchor": { "x": 0, "z": -1.9, "yawDeg": 0 },
+  "objects": [
+    { "name": "Bookshelf left", "model": "bgcommon/hou/indoor/general/0080/bgparts/fun_b0_m0080.mdl", "offset": [1.3, 0, 0], "yawDeg": 180, "scale": 1 },
+    { "name": "Bookshelf right", "model": "bgcommon/hou/indoor/general/0080/bgparts/fun_b0_m0080.mdl", "offset": [-1.3, 0, 0], "yawDeg": 180, "scale": 1 },
+    { "name": "High-back chair", "model": "bgcommon/hou/indoor/general/0077/bgparts/fun_b0_m0077.mdl", "offset": [2.2, 0, 1.2], "yawDeg": -30, "scale": 1 },
+    { "name": "Floor lamp", "model": "bgcommon/hou/indoor/general/0146/bgparts/fun_b0_m0146.mdl", "offset": [3.0, 0, 0.5], "yawDeg": 0, "scale": 1 }
+  ]
+}

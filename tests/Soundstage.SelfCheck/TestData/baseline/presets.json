@@ -1,0 +1,882 @@
+{
+  "formatVersion": 1,
+  "presets": [
+    {
+      "id": "neon-split-blue-red",
+      "name": "Neon split: blue and red",
+      "category": "Neon",
+      "description": "Hard blue from the right of frame and hard red from the left, meeting down the middle of the face. A faint blue fill keeps the dark side from going black.",
+      "bestIn": "Dark interior or night, close portrait.",
+      "references": [
+        2,
+        11
+      ],
+      "lights": [
+        {
+          "name": "Blue key",
+          "shape": "Spot",
+          "color": [
+            0.1,
+            0.25,
+            1.0
+          ],
+          "intensity": 8.0,
+          "range": 20.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 45,
+          "angularFalloffDeg": 12,
+          "azimuthDeg": -65,
+          "distance": 1.6,
+          "height": 1.7,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Red key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.05,
+            0.15
+          ],
+          "intensity": 7.0,
+          "range": 18.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 40,
+          "angularFalloffDeg": 10,
+          "azimuthDeg": 70,
+          "distance": 1.6,
+          "height": 1.6,
+          "aimHeight": 1.5,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Blue fill",
+          "shape": "Point",
+          "color": [
+            0.05,
+            0.1,
+            0.6
+          ],
+          "intensity": 2.0,
+          "range": 7.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 0,
+          "distance": 2.2,
+          "height": 1.4,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "backdrop": null
+    },
+    {
+      "id": "neon-orange-teal-split",
+      "name": "Neon split: orange and teal",
+      "category": "Neon",
+      "description": "Warm orange on one cheek and cold teal on the other, each from a narrow spot at about 60 degrees. The nose shadow is the divide between them.",
+      "bestIn": "Dark interior or night.",
+      "references": [
+        15,
+        4
+      ],
+      "lights": [
+        {
+          "name": "Orange key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.45,
+            0.05
+          ],
+          "intensity": 8.0,
+          "range": 20.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 38,
+          "angularFalloffDeg": 8,
+          "azimuthDeg": -55,
+          "distance": 1.6,
+          "height": 1.7,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Teal key",
+          "shape": "Spot",
+          "color": [
+            0.0,
+            0.85,
+            0.7
+          ],
+          "intensity": 7.0,
+          "range": 17.5,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 40,
+          "angularFalloffDeg": 10,
+          "azimuthDeg": 65,
+          "distance": 1.6,
+          "height": 1.65,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Teal fill",
+          "shape": "Point",
+          "color": [
+            0.0,
+            0.5,
+            0.45
+          ],
+          "intensity": 1.5,
+          "range": 6.2,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 0,
+          "distance": 2.2,
+          "height": 1.3,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "backdrop": null
+    },
+    {
+      "id": "neon-magenta-on-blue",
+      "name": "Neon: magenta side on deep blue",
+      "category": "Neon",
+      "description": "A magenta spot hits one side of the face from the left while the rest of him and the backdrop sit in deep blue. Face goes half pink, half blue.",
+      "bestIn": "Anywhere, since the backdrop supplies the blue. Best with the camera at chest height.",
+      "references": [
+        6,
+        12
+      ],
+      "lights": [
+        {
+          "name": "Magenta key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.05,
+            0.85
+          ],
+          "intensity": 9.0,
+          "range": 21.5,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30,
+          "angularFalloffDeg": 8,
+          "azimuthDeg": 60,
+          "distance": 1.5,
+          "height": 1.7,
+          "aimHeight": 1.6,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Blue fill",
+          "shape": "Point",
+          "color": [
+            0.05,
+            0.1,
+            0.8
+          ],
+          "intensity": 3.0,
+          "range": 11.1,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -50,
+          "distance": 2.0,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "backdrop": {
+        "color": [
+          0.03,
+          0.05,
+          0.4
+        ],
+        "distanceBehind": 2.0,
+        "scale": [
+          4.0,
+          3.0,
+          1.0
+        ],
+        "light": {
+          "name": "Blue wash",
+          "shape": "Point",
+          "color": [
+            0.1,
+            0.15,
+            1.0
+          ],
+          "intensity": 3.0,
+          "range": 12.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 180,
+          "distance": 1.2,
+          "height": 1.2,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      }
+    },
+    {
+      "id": "neon-pink-on-lavender",
+      "name": "Neon: pink key on lavender",
+      "category": "Neon",
+      "description": "A fairly wide pink key from the front left, a cooler lavender fill from the right and a lavender backdrop. Shadows turn violet rather than black.",
+      "bestIn": "Close portraits. Works in daylight and indoors.",
+      "references": [
+        1
+      ],
+      "lights": [
+        {
+          "name": "Pink key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.2,
+            0.55
+          ],
+          "intensity": 7.5,
+          "range": 19.6,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 55,
+          "angularFalloffDeg": 25,
+          "azimuthDeg": 20,
+          "distance": 1.8,
+          "height": 2.2,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Lavender fill",
+          "shape": "Point",
+          "color": [
+            0.6,
+            0.45,
+            1.0
+          ],
+          "intensity": 2.5,
+          "range": 11.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -60,
+          "distance": 2.0,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "backdrop": {
+        "color": [
+          0.7,
+          0.55,
+          0.95
+        ],
+        "distanceBehind": 1.8,
+        "scale": [
+          4.0,
+          3.0,
+          1.0
+        ],
+        "light": {
+          "name": "Lavender wash",
+          "shape": "Point",
+          "color": [
+            0.75,
+            0.55,
+            1.0
+          ],
+          "intensity": 3.5,
+          "range": 13.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 180,
+          "distance": 1.0,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      }
+    },
+    {
+      "id": "neon-orange-on-cyan",
+      "name": "Neon: orange key on cyan",
+      "category": "Neon",
+      "description": "Orange key on the face against a bright cyan backdrop, with a little cyan bounce on the shadow side. The two colours are near opposites, so the face separates from the wall.",
+      "bestIn": "Anywhere. Pairs with orange or red hair and light clothes.",
+      "references": [
+        7
+      ],
+      "lights": [
+        {
+          "name": "Orange key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.5,
+            0.1
+          ],
+          "intensity": 7.5,
+          "range": 19.6,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 50,
+          "angularFalloffDeg": 20,
+          "azimuthDeg": -35,
+          "distance": 1.6,
+          "height": 2.2,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Cyan fill",
+          "shape": "Point",
+          "color": [
+            0.1,
+            0.7,
+            1.0
+          ],
+          "intensity": 2.0,
+          "range": 10.2,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 50,
+          "distance": 2.0,
+          "height": 1.4,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "backdrop": {
+        "color": [
+          0.1,
+          0.75,
+          1.0
+        ],
+        "distanceBehind": 1.8,
+        "scale": [
+          4.0,
+          3.0,
+          1.0
+        ],
+        "light": {
+          "name": "Cyan wash",
+          "shape": "Point",
+          "color": [
+            0.1,
+            0.8,
+            1.0
+          ],
+          "intensity": 4.0,
+          "range": 14.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 180,
+          "distance": 1.0,
+          "height": 1.4,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      }
+    },
+    {
+      "id": "neon-green-rim",
+      "name": "Neon: green rim light",
+      "category": "Neon",
+      "description": "Two green lights from behind and above trace the hair and shoulder, with a dim teal-green light from the front side so the profile still reads. Turn him side-on.",
+      "bestIn": "Dark scenes, profile view.",
+      "references": [
+        5
+      ],
+      "lights": [
+        {
+          "name": "Green rim",
+          "shape": "Spot",
+          "color": [
+            0.2,
+            1.0,
+            0.1
+          ],
+          "intensity": 10.0,
+          "range": 22.6,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 35,
+          "angularFalloffDeg": 10,
+          "azimuthDeg": 150,
+          "distance": 1.8,
+          "height": 2.2,
+          "aimHeight": 1.65,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Green rim 2",
+          "shape": "Spot",
+          "color": [
+            0.3,
+            1.0,
+            0.1
+          ],
+          "intensity": 7.0,
+          "range": 18.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 35,
+          "angularFalloffDeg": 10,
+          "azimuthDeg": -155,
+          "distance": 1.8,
+          "height": 2.1,
+          "aimHeight": 1.65,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Teal face light",
+          "shape": "Spot",
+          "color": [
+            0.05,
+            0.8,
+            0.5
+          ],
+          "intensity": 3.5,
+          "range": 12.0,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 50,
+          "angularFalloffDeg": 20,
+          "azimuthDeg": 75,
+          "distance": 1.7,
+          "height": 1.6,
+          "aimHeight": 1.6,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": true
+        }
+      ],
+      "backdrop": null
+    },
+    {
+      "id": "soft-backlit-hair-glow",
+      "name": "Backlit hair glow",
+      "category": "Soft",
+      "description": "Two bright white-cool lights behind and above light up the edges of the hair, and a wide soft light from the front keeps the face gentle.",
+      "bestIn": "Dark or dim scenes. Looks best head-on or three-quarter.",
+      "references": [
+        9
+      ],
+      "lights": [
+        {
+          "name": "Back light left",
+          "shape": "Spot",
+          "color": [
+            0.85,
+            0.9,
+            1.0
+          ],
+          "intensity": 10.0,
+          "range": 22.6,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 40,
+          "angularFalloffDeg": 15,
+          "azimuthDeg": 165,
+          "distance": 1.8,
+          "height": 2.3,
+          "aimHeight": 1.7,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Back light right",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.95,
+            0.9
+          ],
+          "intensity": 8.0,
+          "range": 20.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 40,
+          "angularFalloffDeg": 15,
+          "azimuthDeg": -165,
+          "distance": 1.8,
+          "height": 2.3,
+          "aimHeight": 1.7,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Soft front",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.92,
+            0.85
+          ],
+          "intensity": 4.0,
+          "range": 14.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 70,
+          "angularFalloffDeg": 40,
+          "azimuthDeg": 15,
+          "distance": 2.0,
+          "height": 1.8,
+          "aimHeight": 1.55,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "backdrop": null
+    },
+    {
+      "id": "harsh-half-face",
+      "name": "Hard side light, half face",
+      "category": "Harsh",
+      "description": "One narrow spot from the side and above with a sharp edge, so half the face goes dark. No fill at all.",
+      "bestIn": "Dark scenes. Face the camera, turn the head slightly to the light.",
+      "references": [
+        14
+      ],
+      "lights": [
+        {
+          "name": "Hard key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.95,
+            0.88
+          ],
+          "intensity": 11.0,
+          "range": 23.7,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 22,
+          "angularFalloffDeg": 3,
+          "azimuthDeg": 90,
+          "distance": 1.5,
+          "height": 1.9,
+          "aimHeight": 1.6,
+          "characterShadows": true,
+          "objectShadows": true,
+          "specular": true
+        }
+      ],
+      "backdrop": null
+    },
+    {
+      "id": "soft-window",
+      "name": "Soft window light",
+      "category": "Soft",
+      "description": "A broad soft source from one side, like a window, with a weak warm bounce from the other. The shadow side is gentle and the skin stays even.",
+      "bestIn": "Indoors or anywhere. Turn him towards the window side.",
+      "references": [
+        10
+      ],
+      "lights": [
+        {
+          "name": "Window",
+          "shape": "Flat",
+          "color": [
+            1.0,
+            0.95,
+            0.88
+          ],
+          "intensity": 6.5,
+          "range": 18.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 60,
+          "angularFalloffDeg": 20,
+          "azimuthDeg": 85,
+          "distance": 1.8,
+          "height": 2.1,
+          "aimHeight": 1.5,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Bounce",
+          "shape": "Point",
+          "color": [
+            0.9,
+            0.85,
+            0.8
+          ],
+          "intensity": 3.0,
+          "range": 11.8,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -50,
+          "distance": 2.4,
+          "height": 1.3,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "backdrop": null
+    },
+    {
+      "id": "natural-golden-hour",
+      "name": "Golden hour",
+      "category": "Natural",
+      "description": "A low warm sun from the front side, a hot amber rim from behind and above, and a weak sky-blue fill in the shade.",
+      "bestIn": "Outdoors or any scene with plenty of open space.",
+      "references": [
+        16
+      ],
+      "lights": [
+        {
+          "name": "Low sun",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.62,
+            0.22
+          ],
+          "intensity": 9.5,
+          "range": 22.1,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 60,
+          "angularFalloffDeg": 25,
+          "azimuthDeg": -50,
+          "distance": 2.5,
+          "height": 2.2,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Warm rim",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.7,
+            0.3
+          ],
+          "intensity": 8.0,
+          "range": 20.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 40,
+          "angularFalloffDeg": 15,
+          "azimuthDeg": 170,
+          "distance": 2.2,
+          "height": 2.4,
+          "aimHeight": 1.7,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Sky fill",
+          "shape": "Point",
+          "color": [
+            0.5,
+            0.65,
+            1.0
+          ],
+          "intensity": 1.5,
+          "range": 8.8,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 60,
+          "distance": 2.2,
+          "height": 1.4,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "backdrop": null
+    },
+    {
+      "id": "soft-white-high-key",
+      "name": "White high-key beauty",
+      "category": "Soft",
+      "description": "A bright white backdrop, a large soft key and a soft fill. A faint blue edge light from low on one side adds a cool tint to the skin.",
+      "bestIn": "Anywhere. The white panel gives a seamless studio look.",
+      "references": [
+        8,
+        13
+      ],
+      "lights": [
+        {
+          "name": "Beauty key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.97,
+            0.93
+          ],
+          "intensity": 8.5,
+          "range": 20.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 70,
+          "angularFalloffDeg": 35,
+          "azimuthDeg": 10,
+          "distance": 2.0,
+          "height": 2.7,
+          "aimHeight": 1.55,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Fill",
+          "shape": "Point",
+          "color": [
+            0.95,
+            0.97,
+            1.0
+          ],
+          "intensity": 3.5,
+          "range": 13.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -40,
+          "distance": 2.2,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        },
+        {
+          "name": "Blue edge",
+          "shape": "Spot",
+          "color": [
+            0.1,
+            0.35,
+            1.0
+          ],
+          "intensity": 3.0,
+          "range": 12.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 45,
+          "angularFalloffDeg": 20,
+          "azimuthDeg": -75,
+          "distance": 1.6,
+          "height": 1.2,
+          "aimHeight": 1.5,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": true
+        }
+      ],
+      "backdrop": {
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "distanceBehind": 1.8,
+        "scale": [
+          4.0,
+          3.0,
+          1.0
+        ],
+        "light": {
+          "name": "White wash",
+          "shape": "Point",
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "intensity": 6.0,
+          "range": 17.5,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 180,
+          "distance": 1.2,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      }
+    }
+  ]
+}

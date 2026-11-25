@@ -1,0 +1,151 @@
+{
+  "$type": "Keylight.Configuration, Keylight",
+  "Version": 3,
+  "FollowPlayer": true,
+  "ShowLightMarkers": false,
+  "SelectedPresetId": "soft-window",
+  "ShowBackdrop": true,
+  "Backdrop": {
+    "$type": "Keylight.BackdropAdjust, Keylight",
+    "ScaleX": 1.0,
+    "ScaleY": 1.0,
+    "DistanceOffset": 0.0,
+    "YawOffsetDeg": 0.0,
+    "HeightOffset": 0.0
+  },
+  "CanvasYawOffsetDeg": 0.0,
+  "CanvasHeightOffset": 0.0,
+  "TestResults": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[Keylight.TestResult, Keylight]], System.Private.CoreLib",
+    "1": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "api revision 1.2",
+      "When": "18/11/2026 03:29"
+    },
+    "2": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:29"
+    },
+    "3:neon-orange-teal-split": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "3:neon-magenta-on-blue": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "3:neon-pink-on-lavender": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "3:neon-orange-on-cyan": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "3:neon-green-rim": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "3:soft-backlit-hair-glow": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "3:harsh-half-face": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "3:soft-window": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "3:natural-golden-hour": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "3:soft-white-high-key": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "3:builtin-warm-key-cool-fill": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "3:neon-split-blue-red": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "5": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:30"
+    },
+    "6": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "Cant remove the  backdrop",
+      "When": "18/11/2026 03:31"
+    },
+    "8": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:31"
+    },
+    "9": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:31"
+    },
+    "10": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:32"
+    },
+    "4": {
+      "$type": "Keylight.TestResult, Keylight",
+      "Status": "PASS",
+      "Note": "",
+      "When": "18/11/2026 03:32"
+    }
+  },
+  "PoseFolders": [
+    "D:\\Games\\FFXIV Mods"
+  ],
+  "PoseFoldersInitialised": true,
+  "IncludeBrioLibraryFolders": true,
+  "PoseBody": true,
+  "PoseExpression": true,
+  "PoseHoverPreview": true,
+  "FavouritePoses": [],
+  "RecentPoses": []
+}

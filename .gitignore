@@ -1,0 +1,9 @@
+bin/
+obj/
+*.user
+reshade-addon/out/
+tools/face/.venv/
+tools/face/__pycache__/
+scrub_private.local.txt
+dist/
+publish/

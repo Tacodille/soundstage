@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Part 12 uses System.Drawing; the self-check only ever runs on Windows. -->
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- The converter is shared as a source file: it has no Dalamud types in it. -->
+    <Compile Include="..\..\src\Soundstage\Scenes\*.cs" LinkBase="Scenes" />
+    <!-- Part 9: the Set code (sweep, kits, atmosphere, picture) has no Dalamud types. -->
+    <Compile Include="..\..\src\Soundstage\Set\*.cs" LinkBase="Set" />
+    <Compile Include="..\..\src\Soundstage\PoseLibrary.cs" Link="PoseLibrary.cs" />
+    <Compile Include="..\..\src\Soundstage\BrioBoneCategories.cs" Link="BrioBoneCategories.cs" />
+    <Compile Include="..\..\src\Soundstage\ConfigSections.cs" Link="ConfigSections.cs" />
+    <!-- Part 5: the pose tag store (and whatever part 14 adds under Poses/) is Dalamud-free, so a wildcard covers it. -->
+    <Compile Include="..\..\src\Soundstage\Poses\*.cs" LinkBase="Poses" />
+    <Compile Include="..\..\src\Soundstage\Checklist\TestResult.cs" Link="Checklist\TestResult.cs" />
+    <Compile Include="..\..\src\Soundstage\Migration\LegacyKeylight.cs" Link="Migration\LegacyKeylight.cs" />
+    <!-- Part 11: everything under Look/ is Dalamud-free (the game-facing source lives in GameAccess/), so one wildcard covers it. -->
+    <Compile Include="..\..\src\Soundstage\Look\*.cs" LinkBase="Look" />
+    <!-- Part 15: the status rows (colours, wording) are pure; the tab that draws them is not compiled here. -->
+    <Compile Include="..\..\src\Soundstage\Status\*.cs" LinkBase="Status" />
+    <Compile Include="..\..\src\Soundstage\Checklist\IChecklistArea.cs" Link="Checklist\IChecklistArea.cs" />
+    <!-- Part 2: the pure game-access wrappers (no game types in that folder). -->
+    <Compile Include="..\..\src\Soundstage\GameAccess\Pure\*.cs" LinkBase="GameAccess\Pure" />
+    <!-- Part 10: the camera maths and service (no Dalamud types in Camera/Pure). -->
+    <Compile Include="..\..\src\Soundstage\Camera\Pure\*.cs" LinkBase="Camera\Pure" />
+    <!-- Part 8: the pure lighting maths (aim, animation, gels, harmony, exposure). The service that touches the game is in Lighting\Live, which is not compiled here. -->
+    <Compile Include="..\..\src\Soundstage\Lighting\*.cs" LinkBase="Lighting" />
+    <!-- Every area file is pure data (no Dalamud types), so they all compile here: a new area is checked without editing this file. -->
+    <Compile Include="..\..\src\Soundstage\Checklist\Areas\*.cs" LinkBase="Checklist\Areas" />
+    <!-- Part 16: the face analyser, its helper protocol, installer, camera and light functions have no Dalamud types. -->
+    <Compile Include="..\..\src\Soundstage\Face\*.cs" LinkBase="Face" />
+    <!-- Part 17: the expression table, solver, calibrator and matching loop have no Dalamud types (Expression\Live does, so it is left out). -->
+    <Compile Include="..\..\src\Soundstage\Expression\*.cs" LinkBase="Expression" />
+    <PackageReference Include="Stagehand.Definitions" Version="0.5.5" />
+    <!-- Part 6: the AI layer has no Dalamud types, so its sources compile here. -->
+    <Compile Include="..\..\src\Soundstage\Ai\*.cs" LinkBase="Ai" />
+    <!-- Part 13: photo to scene (schema, prompt, mapper, intake, run) has no Dalamud types either. -->
+    <Compile Include="..\..\src\Soundstage\Ai\PhotoToScene\*.cs" LinkBase="Ai\PhotoToScene" />
+    <PackageReference Include="StbImageWriteSharp" Version="1.16.7" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="10.0.0" />
+    <PackageReference Include="StbImageSharp" Version="2.30.15" />
+    <!-- Part 12: capture service, routes, booth, contact sheet and the edge filter have no Dalamud types. Workflow\Live and Overlays\OnionSkin do, so they are left out. -->
+    <Compile Include="..\..\src\Soundstage\Capture\*.cs" LinkBase="Capture" />
+    <Compile Include="..\..\src\Soundstage\Workflow\*.cs" LinkBase="Workflow" />
+    <Compile Include="..\..\src\Soundstage\Overlays\EdgeFilter.cs" Link="Overlays\EdgeFilter.cs" />
+    <PackageReference Include="System.Drawing.Common" Version="10.0.0" />
+  </ItemGroup>
+
+</Project>

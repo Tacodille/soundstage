@@ -1,0 +1,70 @@
+Soundstage
+Copyright (c) 2026 Tacodile. Soundstage's own source is under the MIT licence (see LICENSE).
+
+Soundstage uses the software below. Each part keeps its own licence. The licence of each was read from the package's own
+metadata (the nuspec in the NuGet package) or from the project's own repository on 21/11/2026.
+
+1. Libraries that travel inside the plugin zip
+
+  Stagehand.Api 0.5.5 and Stagehand.Definitions 0.5.5
+    Licence: AGPL-3.0-or-later (nuspec: license expression AGPL-3.0-or-later)
+    Author: UniversalConquistador. Source: https://github.com/universalconquistador/Stagehand
+    Shipped unmodified, beside Soundstage.dll. Soundstage's own source is public under MIT, so anyone can read, rebuild and
+    swap these two libraries. If you pass the plugin zip on, pass this notice and the link to the source with it. The AGPL
+    terms apply to those two libraries and to the combination of them with Soundstage.dll in the zip.
+
+  Brio.API 3.0.1
+    Licence: MIT. Copyright Minmoose 2025. Source: https://github.com/Etheirys/Brio.API
+
+  Glamourer.Api 2.8.2
+    Licence: MIT. Author: Ottermandias. Source: https://github.com/Ottermandias/Glamourer
+
+  Penumbra.Api 5.19.2
+    Licence: MIT. Author: Ottermandias. Source: https://github.com/Ottermandias/Penumbra.Api
+    The package carries Luna.dll as a fallback copy; it ships under the same package and licence expression.
+
+  StbImageSharp 2.30.15
+    Licence: public domain or MIT (the project's README). Source: https://github.com/StbSharp/StbImageSharp
+
+  StbImageWriteSharp 1.16.7
+    Licence: public domain (the project's README). Source: https://github.com/StbSharp/StbImageWriteSharp
+
+  System.Drawing.Common 10.0.0, System.Security.Cryptography.ProtectedData 10.0.0, System.IO.Hashing 9.0.8,
+  Microsoft.Win32.SystemEvents 10.0.0, Microsoft.Extensions.Logging, .DependencyInjection, .Options (and their
+  Abstractions and Primitives) 9.0.0
+    Licence: MIT. Copyright Microsoft Corporation. Source: https://github.com/dotnet
+
+2. The ReShade add-on (a separate download, not in the plugin zip)
+
+  soundstage.addon64 is built from reshade-addon/soundstage.cpp (MIT, Soundstage's own) against the ReShade 6.8.0 add-on
+  headers, which are copied unmodified into reshade-addon/include/ with their licence (RESHADE-LICENSE.md).
+    Licence of the headers: BSD-3-Clause. Copyright 2014 Patrick Mours. Source: https://github.com/crosire/reshade
+  ReShade itself is not shipped or changed. You install it yourself.
+
+3. The face helper (a separate download the plugin fetches when you ask for it, not in the plugin zip)
+
+  Face analysis uses Google's MediaPipe Face Landmarker model (Apache License 2.0) and the MediaPipe, NumPy, OpenCV, Matplotlib, Pillow and Python packages, downloaded by the user on request from python.org, PyPI and Google. Each keeps its own licence.
+
+  The list the plugin downloads, with versions and hashes, is src/Soundstage/Face/face-pack.json. Licences as read from
+  PyPI on 21/11/2026:
+    Face Landmarker model (face_landmarker.task, float16/1)   Apache-2.0
+    Pose Landmarker model (pose_landmarker_full, float16/1)   Apache-2.0 (Google's model card; src/Soundstage/Face/pose-pack.json)
+    Python embeddable 3.14.5                                   PSF-2.0
+    mediapipe 1.2.3, absl-py 2.5.1, flatbuffers 25.12.19       Apache-2.0
+    opencv-python-headless 5.1.0.95                            Apache-2.0 (the wheel also bundles FFmpeg under LGPL-2.1, per the opencv-python project)
+    numpy 2.5.5                                                BSD-3-Clause and others, per PyPI
+    matplotlib 3.11.2                                          Matplotlib licence (PSF-based)
+    pillow 13.0.0                                              MIT-CMU
+    certifi, packaging, pyparsing, cycler, python-dateutil, kiwisolver, fonttools   each wheel's own licence
+  Nothing from this list is redistributed by Soundstage. It is downloaded straight from the official sources, checked
+  against a pinned SHA-256, and kept in the plugin's own config folder.
+
+4. Plugins Soundstage talks to (not shipped, not changed)
+
+  Stagehand, Brio, Glamourer and Penumbra are separate Dalamud plugins you install yourself. Soundstage only calls their
+  public IPC.
+
+5. AI providers (optional, your own key)
+
+  Soundstage can send a picture to Google Gemini, OpenRouter or a server you name, using a key you paste in. Those are
+  their services under their own terms. See SETUP-AI.md.

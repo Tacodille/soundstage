@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "note": "The tags the AI tagger may pick from. Add words here (lower case, letters, digits, spaces and hyphens, up to 24 characters). A copy named pose-vocabulary.json in the plugin config folder adds to this list without being overwritten by updates.",
+  "words": [
+    "standing", "sitting", "kneeling", "lying", "crouching", "leaning", "walking", "running", "jumping", "dancing",
+    "arms crossed", "hands on hips", "hand on hip", "hands behind back", "hands in pockets", "arms raised", "hand on chin", "waving", "salute", "holding weapon",
+    "looking back", "looking up", "looking down", "looking away", "looking at camera", "over the shoulder",
+    "combat", "relaxed", "cute", "elegant", "dynamic", "confident", "shy", "sleepy", "playful", "serious",
+    "casual", "formal", "heroic", "cool", "powerful",
+    "front view", "side view", "back view", "three-quarter", "profile", "side profile", "head-on", "close up", "full body", "group friendly", "couple", "arms up", "smiling"
+  ]
+}

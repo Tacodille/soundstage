@@ -1,0 +1,71 @@
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+    <Authors>Tacodile</Authors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Dalamud 15.0.3.x as installed by XIVLauncher on this machine (same path as Nameplate Offset). -->
+    <DalamudLibPath>$(APPDATA)\XIVLauncher\addon\Hooks\dev\</DalamudLibPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Stagehand's consumer libraries from NuGet, version matched to the installed Stagehand 0.5.5. -->
+    <PackageReference Include="Stagehand.Api" Version="0.5.5" />
+    <PackageReference Include="Stagehand.Definitions" Version="0.5.5" />
+    <!-- Brio's consumer library (IPC v3), matching Brio 0.8.0.12's Libs/Brio API submodule (package version 3.0.1). -->
+    <PackageReference Include="Brio.API" Version="3.0.1" />
+    <!-- Windows DPAPI for the AI key store (part 6). -->
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="10.0.0" />
+    <!-- Part 7: Glamourer and Penumbra IPC consumer libraries from NuGet (Glamourer 1.7.1.3, Penumbra 1.7.2.1 are installed; see docs/integrations.md). -->
+    <PackageReference Include="Glamourer.Api" Version="2.8.2" />
+    <PackageReference Include="Penumbra.Api" Version="5.19.2" />
+    <PackageReference Include="StbImageSharp" Version="2.30.15" />
+    <!-- Part 12: PNG encode, decode and the contact sheet grid (the plugin is Windows only). -->
+    <PackageReference Include="System.Drawing.Common" Version="10.0.0" />
+    <!-- Part 13: re-encodes a photo as JPEG (no EXIF) before it is sent. Pure managed, same family as StbImageSharp. -->
+    <PackageReference Include="StbImageWriteSharp" Version="1.16.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- The picture canvas test texture (made by TestData\make_canvas_test.py), embedded so no file is needed beside the dll. -->
+    <EmbeddedResource Include="TestData\canvas_test_d.tex" LogicalName="Soundstage.canvas_test_d.tex" />
+  </ItemGroup>
+
+  <!-- The shipped Scenes are written by tools\gen_scenes.py; copy them beside Soundstage.dll when the file exists. -->
+  <ItemGroup Condition="Exists('scenes.json')">
+    <None Include="scenes.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <!-- Part 8: the gel list, written by the same generator. -->
+  <ItemGroup Condition="Exists('gels.json')">
+    <None Include="gels.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <!-- Part 9: prop kits and the atmosphere catalogue sit beside the dll, as data. -->
+  <ItemGroup>
+    <None Include="kits\*.json" Link="kits\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="atmosphere.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <!-- Part 14: the tags the pose tagger may pick from, beside the dll so it can grow without a rebuild. -->
+  <ItemGroup>
+    <None Include="Poses\vocabulary.json" Link="vocabulary.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <!-- Dev only: the six-light test Scene for the Tools tab (also written by the generator). -->
+  <ItemGroup Condition="Exists('TestData\six-lights.json')">
+    <None Include="TestData\six-lights.json" Link="six-lights.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <!-- Part 16: the face helper's pinned download list and its own two source files travel inside the dll, so the plugin can write them beside the downloaded Python. No model weights are embedded. -->
+  <ItemGroup>
+    <EmbeddedResource Include="Face\face-pack.json" LogicalName="Soundstage.face-pack.json" />
+    <EmbeddedResource Include="Face\pose-pack.json" LogicalName="Soundstage.pose-pack.json" />
+    <EmbeddedResource Include="Expression\body-map.json" LogicalName="Soundstage.body-map.json" />
+    <EmbeddedResource Include="..\..\tools\face\helper.py" LogicalName="Soundstage.face.helper.py" />
+    <EmbeddedResource Include="..\..\tools\face\face_core.py" LogicalName="Soundstage.face.face_core.py" />
+  </ItemGroup>
+
+</Project>

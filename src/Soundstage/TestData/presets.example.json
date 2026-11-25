@@ -1,0 +1,60 @@
+{
+  "formatVersion": 1,
+  "presets": [
+    {
+      "id": "neon-split-blue-red",
+      "name": "Neon split: blue and red",
+      "category": "Neon",
+      "description": "One or two plain sentences on the look.",
+      "bestIn": "Dark interior or night. Plain words.",
+      "references": [2, 15],
+      "lights": [
+        {
+          "name": "Key",
+          "shape": "Spot",
+          "color": [0.1, 0.25, 1.0],
+          "intensity": 6.0,
+          "range": 12.0,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 70.0,
+          "distance": 1.5,
+          "height": 1.7,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        }
+      ],
+      "backdrop": {
+        "color": [0.05, 0.05, 0.3],
+        "distanceBehind": 2.0,
+        "scale": [3.0, 3.0, 1.0],
+        "light": null
+      }
+    },
+    {
+      "id": "test-three-azimuths",
+      "name": "Test: azimuths 0, 90, 180",
+      "category": "Test",
+      "lights": [
+        { "name": "Front", "shape": "Point", "color": [1, 1, 1], "azimuthDeg": 0,   "distance": 2.0, "height": 1.0 },
+        { "name": "Left",  "shape": "spot",  "color": [1, 0, 0], "azimuthDeg": 90,  "distance": 1.5, "height": 1.7, "aimHeight": 1.55, "falloff": "cubic", "coneDeg": 40, "angularFalloffDeg": 8 },
+        { "name": "Back",  "shape": "Flat",  "color": [0, 1, 0], "azimuthDeg": 180, "distance": 3.0, "height": 2.0, "aimHeight": null }
+      ],
+      "backdrop": {
+        "color": [1, 0.5, 0.25],
+        "distanceBehind": 2.5,
+        "scale": [4, 3, 1],
+        "light": { "name": "Backdrop wash", "shape": "Point", "color": [1, 0.5, 0.25], "azimuthDeg": 180, "distance": 1.5, "height": 1.0 }
+      }
+    },
+    { "id": "bad-shape", "name": "Bad", "lights": [ { "shape": "Ambient", "color": [1, 1, 1] } ] },
+    { "id": "bad-no-lights", "name": "Bad", "lights": [] },
+    { "id": "bad-falloff", "name": "Bad", "lights": [ { "shape": "Point", "falloff": "Sideways", "color": [1, 1, 1] } ] },
+    { "id": "bad-types", "name": "Bad", "lights": "not an array" },
+    { "name": "bad-no-id", "lights": [ { "shape": "Point", "color": [1, 1, 1] } ] }
+  ]
+}

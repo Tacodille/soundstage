@@ -1,0 +1,68 @@
+{
+  "formatVersion": 1,
+  "items": [
+    {
+      "id": "haze", "name": "Haze", "kind": "vfx",
+      "path": "vfx/common/eff/lcut_smoke0f.avfx",
+      "offset": [0, 0, -1.2], "scale": 1.5,
+      "status": "untested",
+      "note": "Cutscene smoke. Meant to read as a low haze behind the subject."
+    },
+    {
+      "id": "light-shafts", "name": "Light shafts", "kind": "vfx",
+      "path": "vfx/common/eff/m0614_overray_lp_c0v.avfx",
+      "offset": [1.2, 0, -1.5], "scale": 1.5,
+      "status": "untested",
+      "note": "A looping overhead ray effect from a boss encounter. May be a beam rather than soft shafts."
+    },
+    {
+      "id": "sun", "name": "Sun glow", "kind": "vfx",
+      "path": "vfx/common/eff/m0330_cast_sun_c0k2.avfx",
+      "offset": [1.5, 1.2, -2.0], "scale": 1.0,
+      "status": "untested",
+      "note": "A sun-themed cast effect. Used for the Golden hour flag."
+    },
+    {
+      "id": "dust", "name": "Dust", "kind": "vfx",
+      "path": "vfx/common/eff/foot_dust_a.avfx",
+      "offset": [0, 0, 0], "scale": 2.0,
+      "status": "untested",
+      "note": "A footstep dust puff. It may play once rather than loop."
+    },
+    {
+      "id": "leaves", "name": "Falling leaves", "kind": "vfx",
+      "path": "vfx/common/eff/pop_leaf_sml_c0i2.avfx",
+      "offset": [0, 1.2, 0], "scale": 1.5,
+      "status": "untested",
+      "note": "A burst of small leaves."
+    },
+    {
+      "id": "glow", "name": "Soft glow", "kind": "vfx",
+      "path": "vfx/common/eff/aura_bene0h.avfx",
+      "offset": [0, 0, 0], "scale": 1.2,
+      "status": "untested",
+      "note": "A gentle aura around the subject's feet. Tint comes from the effect itself."
+    },
+    {
+      "id": "room-night", "name": "Room music: night", "kind": "sound",
+      "path": "music/ffxiv/BGM_Field_Housing_Night.scd", "soundIndex": 0,
+      "volume": 0.6, "positional": false,
+      "status": "untested",
+      "note": "A quiet night-time housing track. These are music files; no pure ambience file has been found yet."
+    },
+    {
+      "id": "room-calm", "name": "Room music: calm", "kind": "sound",
+      "path": "music/ffxiv/BGM_Town_Rest_01.scd", "soundIndex": 0,
+      "volume": 0.6, "positional": false,
+      "status": "untested",
+      "note": "A calm town track."
+    },
+    {
+      "id": "room-bar", "name": "Room music: bar", "kind": "sound",
+      "path": "music/ffxiv/BGM_Field_Bar.scd", "soundIndex": 0,
+      "volume": 0.6, "positional": false,
+      "status": "untested",
+      "note": "A bar-room track, for a moody low-key shot."
+    }
+  ]
+}

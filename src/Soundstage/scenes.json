@@ -1,0 +1,2471 @@
+{
+  "formatVersion": 2,
+  "scenes": [
+    {
+      "id": "neon-split",
+      "name": "Neon split",
+      "category": "Neon",
+      "description": "Two hard coloured lights from either side of frame meet down the middle of the face, with a faint fill so the dark side does not go black. Four palettes: blue and red, orange and teal, magenta and cyan, violet and amber.",
+      "bestIn": "Dark interior or night, close portrait.",
+      "rig": "split neon",
+      "tags": [
+        "neon",
+        "portrait",
+        "two-colour"
+      ],
+      "legacyIds": {
+        "neon-split-blue-red": "",
+        "neon-orange-teal-split": "Orange and teal"
+      },
+      "defaultPalette": "Blue and red",
+      "palettes": {
+        "Blue and red": {
+          "key": [
+            0.1,
+            0.25,
+            1.0
+          ],
+          "key2": [
+            1.0,
+            0.05,
+            0.15
+          ],
+          "fill": [
+            0.05,
+            0.1,
+            0.6
+          ]
+        },
+        "Orange and teal": {
+          "key": [
+            1.0,
+            0.45,
+            0.05
+          ],
+          "key2": [
+            0.0,
+            0.85,
+            0.7
+          ],
+          "fill": [
+            0.0,
+            0.5,
+            0.45
+          ]
+        },
+        "Magenta and cyan": {
+          "key": [
+            1.0,
+            0.05,
+            0.85
+          ],
+          "key2": [
+            0.05,
+            0.85,
+            1.0
+          ],
+          "fill": [
+            0.03,
+            0.4,
+            0.55
+          ]
+        },
+        "Violet and amber": {
+          "key": [
+            0.5,
+            0.15,
+            1.0
+          ],
+          "key2": [
+            1.0,
+            0.65,
+            0.1
+          ],
+          "fill": [
+            0.3,
+            0.08,
+            0.6
+          ]
+        }
+      },
+      "references": [
+        2,
+        11,
+        15,
+        4
+      ],
+      "lights": [
+        {
+          "name": "Key",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            0.1,
+            0.25,
+            1.0
+          ],
+          "intensity": 8.0,
+          "range": 20.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 45,
+          "angularFalloffDeg": 12,
+          "azimuthDeg": -65,
+          "distance": 1.6,
+          "height": 1.7,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Second key",
+          "role": "key2",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.05,
+            0.15
+          ],
+          "intensity": 7.0,
+          "range": 18.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 40,
+          "angularFalloffDeg": 10,
+          "azimuthDeg": 70,
+          "distance": 1.6,
+          "height": 1.6,
+          "aimHeight": 1.5,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Fill",
+          "role": "fill",
+          "shape": "Point",
+          "color": [
+            0.05,
+            0.1,
+            0.6
+          ],
+          "intensity": 2.0,
+          "range": 7.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 0,
+          "distance": 2.2,
+          "height": 1.4,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "camera": {
+        "framing": "chest-up",
+        "height": "eye",
+        "side": "front",
+        "notes": "Chest-up at eye level."
+      },
+      "look": {
+        "slot": "neon-night"
+      },
+      "pose": {
+        "tags": [
+          "confident",
+          "three-quarter",
+          "arms crossed"
+        ]
+      },
+      "animation": {
+        "effects": [
+          {
+            "target": "key",
+            "kind": "pulse",
+            "amount": 0.15,
+            "rateHz": 0.25,
+            "enabled": false
+          },
+          {
+            "target": "key2",
+            "kind": "pulse",
+            "amount": 0.15,
+            "rateHz": 0.25,
+            "enabled": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "neon-wall-hard",
+      "name": "Neon wall, hard",
+      "category": "Neon",
+      "description": "A hard magenta spot hits one side of the face from the left while the rest of the frame and the wall behind sit in deep blue. The face goes half pink, half blue.",
+      "bestIn": "Anywhere, since the backdrop supplies the blue. Best with the camera at chest height.",
+      "rig": "neon wall",
+      "tags": [
+        "neon",
+        "backdrop",
+        "hard"
+      ],
+      "legacyIds": {
+        "neon-magenta-on-blue": ""
+      },
+      "defaultPalette": "Magenta on blue",
+      "palettes": {
+        "Magenta on blue": {
+          "key": [
+            1.0,
+            0.05,
+            0.85
+          ],
+          "fill": [
+            0.05,
+            0.1,
+            0.8
+          ],
+          "backdrop": [
+            0.03,
+            0.05,
+            0.4
+          ],
+          "bg": [
+            0.1,
+            0.15,
+            1.0
+          ]
+        }
+      },
+      "references": [
+        6,
+        12
+      ],
+      "lights": [
+        {
+          "name": "Magenta key",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.05,
+            0.85
+          ],
+          "intensity": 9.0,
+          "range": 21.5,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30,
+          "angularFalloffDeg": 8,
+          "azimuthDeg": 60,
+          "distance": 1.5,
+          "height": 1.7,
+          "aimHeight": 1.6,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Blue fill",
+          "role": "fill",
+          "shape": "Point",
+          "color": [
+            0.05,
+            0.1,
+            0.8
+          ],
+          "intensity": 3.0,
+          "range": 11.1,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -50,
+          "distance": 2.0,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "backdrop": {
+        "color": [
+          0.03,
+          0.05,
+          0.4
+        ],
+        "distanceBehind": 2.0,
+        "scale": [
+          4.0,
+          3.0,
+          1.0
+        ],
+        "light": {
+          "name": "Blue wash",
+          "role": "bg",
+          "shape": "Point",
+          "color": [
+            0.1,
+            0.15,
+            1.0
+          ],
+          "intensity": 3.0,
+          "range": 12.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 180,
+          "distance": 1.2,
+          "height": 1.2,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      },
+      "set": {
+        "kind": "sweep",
+        "colorRole": "backdrop",
+        "props": [],
+        "notes": "A dyed sweep once the Set tab lands; the partition panel until then."
+      },
+      "camera": {
+        "framing": "chest-up",
+        "height": "chest",
+        "side": "front",
+        "notes": "Camera at chest height."
+      },
+      "look": {
+        "slot": "neon-night"
+      },
+      "pose": {
+        "tags": [
+          "side profile",
+          "looking away"
+        ]
+      },
+      "animation": {
+        "effects": [
+          {
+            "target": "bg",
+            "kind": "flicker",
+            "amount": 0.2,
+            "rateHz": 6.0,
+            "enabled": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "neon-wall-soft",
+      "name": "Neon wall, soft",
+      "category": "Neon",
+      "description": "A wide, soft pink key from the front left, a cooler lavender fill and a lavender wall. Shadows turn violet rather than black. A second palette puts an orange key against a bright cyan wall.",
+      "bestIn": "Close portraits. Works in daylight and indoors.",
+      "rig": "neon wall",
+      "tags": [
+        "neon",
+        "backdrop",
+        "soft"
+      ],
+      "legacyIds": {
+        "neon-pink-on-lavender": "",
+        "neon-orange-on-cyan": "Orange and cyan"
+      },
+      "defaultPalette": "Pink and lavender",
+      "palettes": {
+        "Pink and lavender": {
+          "key": [
+            1.0,
+            0.2,
+            0.55
+          ],
+          "fill": [
+            0.6,
+            0.45,
+            1.0
+          ],
+          "backdrop": [
+            0.7,
+            0.55,
+            0.95
+          ],
+          "bg": [
+            0.75,
+            0.55,
+            1.0
+          ]
+        },
+        "Orange and cyan": {
+          "key": [
+            1.0,
+            0.5,
+            0.1
+          ],
+          "fill": [
+            0.1,
+            0.7,
+            1.0
+          ],
+          "bg": [
+            0.1,
+            0.8,
+            1.0
+          ],
+          "backdrop": [
+            0.1,
+            0.75,
+            1.0
+          ]
+        }
+      },
+      "references": [
+        1,
+        7
+      ],
+      "lights": [
+        {
+          "name": "Key",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.2,
+            0.55
+          ],
+          "intensity": 7.5,
+          "range": 19.6,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 55,
+          "angularFalloffDeg": 25,
+          "azimuthDeg": 20,
+          "distance": 1.8,
+          "height": 2.2,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Fill",
+          "role": "fill",
+          "shape": "Point",
+          "color": [
+            0.6,
+            0.45,
+            1.0
+          ],
+          "intensity": 2.5,
+          "range": 11.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -60,
+          "distance": 2.0,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "backdrop": {
+        "color": [
+          0.7,
+          0.55,
+          0.95
+        ],
+        "distanceBehind": 1.8,
+        "scale": [
+          4.0,
+          3.0,
+          1.0
+        ],
+        "light": {
+          "name": "Wash",
+          "role": "bg",
+          "shape": "Point",
+          "color": [
+            0.75,
+            0.55,
+            1.0
+          ],
+          "intensity": 3.5,
+          "range": 13.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 180,
+          "distance": 1.0,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      },
+      "set": {
+        "kind": "sweep",
+        "colorRole": "backdrop",
+        "props": [],
+        "notes": "A dyed sweep once the Set tab lands; the partition panel until then."
+      },
+      "camera": {
+        "framing": "close-portrait",
+        "height": "eye",
+        "side": "front",
+        "notes": "Close portrait."
+      },
+      "look": {
+        "slot": "neon-night"
+      },
+      "pose": {
+        "tags": [
+          "head-on",
+          "smiling"
+        ]
+      }
+    },
+    {
+      "id": "rim-only",
+      "name": "Rim only",
+      "category": "Classic",
+      "description": "Two lights from behind and above trace the hair and shoulder, and a dim light from the front side keeps the profile readable. Turn side-on. Palettes: green neon, white, amber.",
+      "bestIn": "Dark scenes, profile view.",
+      "rig": "rim light",
+      "tags": [
+        "rim",
+        "profile",
+        "dark"
+      ],
+      "legacyIds": {
+        "neon-green-rim": ""
+      },
+      "defaultPalette": "Green neon",
+      "palettes": {
+        "Green neon": {
+          "rim": [
+            0.2,
+            1.0,
+            0.1
+          ],
+          "rim2": [
+            0.3,
+            1.0,
+            0.1
+          ],
+          "fill": [
+            0.05,
+            0.8,
+            0.5
+          ]
+        },
+        "White": {
+          "rim": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "rim2": [
+            1.0,
+            0.97,
+            0.92
+          ],
+          "fill": [
+            0.45,
+            0.5,
+            0.55
+          ]
+        },
+        "Amber": {
+          "rim": [
+            1.0,
+            0.6,
+            0.15
+          ],
+          "rim2": [
+            1.0,
+            0.7,
+            0.25
+          ],
+          "fill": [
+            0.6,
+            0.35,
+            0.1
+          ]
+        }
+      },
+      "references": [
+        5
+      ],
+      "lights": [
+        {
+          "name": "Rim",
+          "role": "rim",
+          "shape": "Spot",
+          "color": [
+            0.2,
+            1.0,
+            0.1
+          ],
+          "intensity": 10.0,
+          "range": 22.6,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 35,
+          "angularFalloffDeg": 10,
+          "azimuthDeg": 150,
+          "distance": 1.8,
+          "height": 2.2,
+          "aimHeight": 1.65,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Rim 2",
+          "role": "rim2",
+          "shape": "Spot",
+          "color": [
+            0.3,
+            1.0,
+            0.1
+          ],
+          "intensity": 7.0,
+          "range": 18.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 35,
+          "angularFalloffDeg": 10,
+          "azimuthDeg": -155,
+          "distance": 1.8,
+          "height": 2.1,
+          "aimHeight": 1.65,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Face light",
+          "role": "fill",
+          "shape": "Spot",
+          "color": [
+            0.05,
+            0.8,
+            0.5
+          ],
+          "intensity": 3.5,
+          "range": 12.0,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 50,
+          "angularFalloffDeg": 20,
+          "azimuthDeg": 75,
+          "distance": 1.7,
+          "height": 1.6,
+          "aimHeight": 1.6,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": true
+        }
+      ],
+      "camera": {
+        "framing": "side-on",
+        "height": "eye",
+        "side": "right",
+        "notes": "Side-on."
+      },
+      "look": {
+        "slot": "dark-moody"
+      },
+      "pose": {
+        "tags": [
+          "profile",
+          "standing"
+        ]
+      }
+    },
+    {
+      "id": "hair-glow",
+      "name": "Hair glow",
+      "category": "Soft",
+      "description": "Two bright white-cool lights behind and above light up the edges of the hair, and a wide soft light from the front keeps the face gentle.",
+      "bestIn": "Dark or dim scenes. Looks best head-on or three-quarter.",
+      "rig": "back light",
+      "tags": [
+        "soft",
+        "backlit",
+        "hair"
+      ],
+      "legacyIds": {
+        "soft-backlit-hair-glow": ""
+      },
+      "defaultPalette": "Cool white",
+      "palettes": {
+        "Cool white": {
+          "rim": [
+            0.85,
+            0.9,
+            1.0
+          ],
+          "rim2": [
+            1.0,
+            0.95,
+            0.9
+          ],
+          "key": [
+            1.0,
+            0.92,
+            0.85
+          ]
+        }
+      },
+      "references": [
+        9
+      ],
+      "lights": [
+        {
+          "name": "Back light left",
+          "role": "rim",
+          "shape": "Spot",
+          "color": [
+            0.85,
+            0.9,
+            1.0
+          ],
+          "intensity": 10.0,
+          "range": 22.6,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 40,
+          "angularFalloffDeg": 15,
+          "azimuthDeg": 165,
+          "distance": 1.8,
+          "height": 2.3,
+          "aimHeight": 1.7,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Back light right",
+          "role": "rim2",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.95,
+            0.9
+          ],
+          "intensity": 8.0,
+          "range": 20.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 40,
+          "angularFalloffDeg": 15,
+          "azimuthDeg": -165,
+          "distance": 1.8,
+          "height": 2.3,
+          "aimHeight": 1.7,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Soft front",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.92,
+            0.85
+          ],
+          "intensity": 4.0,
+          "range": 14.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 70,
+          "angularFalloffDeg": 40,
+          "azimuthDeg": 15,
+          "distance": 2.0,
+          "height": 1.8,
+          "aimHeight": 1.55,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "atmosphere": {
+        "haze": "light",
+        "dust": false,
+        "sun": false,
+        "notes": "Light haze."
+      },
+      "look": {
+        "slot": "soft-bloom"
+      },
+      "pose": {
+        "tags": [
+          "looking back over shoulder",
+          "head-on"
+        ]
+      }
+    },
+    {
+      "id": "split-light",
+      "name": "Split light",
+      "category": "Classic",
+      "description": "One narrow spot from the side and above with a sharp edge, so half the face goes dark. No fill at all.",
+      "bestIn": "Dark scenes. Face the camera, turn the head slightly to the light.",
+      "rig": "split lighting",
+      "tags": [
+        "classic",
+        "hard",
+        "portrait"
+      ],
+      "legacyIds": {
+        "harsh-half-face": ""
+      },
+      "defaultPalette": "Warm white",
+      "palettes": {
+        "Warm white": {
+          "key": [
+            1.0,
+            0.95,
+            0.88
+          ]
+        }
+      },
+      "references": [
+        14
+      ],
+      "lights": [
+        {
+          "name": "Key",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.95,
+            0.88
+          ],
+          "intensity": 11.0,
+          "range": 23.7,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 22,
+          "angularFalloffDeg": 3,
+          "azimuthDeg": 90,
+          "distance": 1.5,
+          "height": 1.9,
+          "aimHeight": 1.6,
+          "characterShadows": true,
+          "objectShadows": true,
+          "specular": true,
+          "aimAt": "face"
+        }
+      ],
+      "camera": {
+        "framing": "close-portrait",
+        "height": "eye",
+        "side": "front",
+        "notes": "Close portrait."
+      },
+      "pose": {
+        "tags": [
+          "three-quarter turn toward the light"
+        ]
+      }
+    },
+    {
+      "id": "window-light",
+      "name": "Window light",
+      "category": "Soft",
+      "description": "A broad soft source from one side, like a window, with a weak warm bounce from the other. The shadow side is gentle and the skin stays even.",
+      "bestIn": "Indoors or anywhere. Turn towards the window side.",
+      "rig": "window light",
+      "tags": [
+        "soft",
+        "natural",
+        "indoor"
+      ],
+      "legacyIds": {
+        "soft-window": ""
+      },
+      "defaultPalette": "Daylight",
+      "palettes": {
+        "Daylight": {
+          "key": [
+            1.0,
+            0.95,
+            0.88
+          ],
+          "fill": [
+            0.9,
+            0.85,
+            0.8
+          ]
+        }
+      },
+      "references": [
+        10
+      ],
+      "lights": [
+        {
+          "name": "Window",
+          "role": "key",
+          "shape": "Flat",
+          "color": [
+            1.0,
+            0.95,
+            0.88
+          ],
+          "intensity": 6.5,
+          "range": 18.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 60,
+          "angularFalloffDeg": 20,
+          "azimuthDeg": 85,
+          "distance": 1.8,
+          "height": 2.1,
+          "aimHeight": 1.5,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Bounce",
+          "role": "fill",
+          "shape": "Point",
+          "color": [
+            0.9,
+            0.85,
+            0.8
+          ],
+          "intensity": 3.0,
+          "range": 11.8,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -50,
+          "distance": 2.4,
+          "height": 1.3,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "camera": {
+        "framing": "three-quarter-waist-up",
+        "height": "eye",
+        "side": "front",
+        "notes": "Three-quarter, waist up."
+      },
+      "pose": {
+        "tags": [
+          "sitting",
+          "looking out"
+        ]
+      },
+      "animation": {
+        "effects": [
+          {
+            "target": "key",
+            "kind": "drift",
+            "amount": 0.08,
+            "rateHz": 0.05,
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "golden-hour",
+      "name": "Golden hour",
+      "category": "Natural",
+      "description": "A low warm sun from the front side, a hot amber rim from behind and above, and a weak sky-blue fill in the shade.",
+      "bestIn": "Outdoors or any scene with plenty of open space.",
+      "rig": "sun and rim",
+      "tags": [
+        "natural",
+        "warm",
+        "outdoor"
+      ],
+      "legacyIds": {
+        "natural-golden-hour": ""
+      },
+      "defaultPalette": "Golden",
+      "palettes": {
+        "Golden": {
+          "key": [
+            1.0,
+            0.62,
+            0.22
+          ],
+          "rim": [
+            1.0,
+            0.7,
+            0.3
+          ],
+          "fill": [
+            0.5,
+            0.65,
+            1.0
+          ]
+        }
+      },
+      "references": [
+        16
+      ],
+      "lights": [
+        {
+          "name": "Low sun",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.62,
+            0.22
+          ],
+          "intensity": 9.5,
+          "range": 22.1,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 60,
+          "angularFalloffDeg": 25,
+          "azimuthDeg": -50,
+          "distance": 2.5,
+          "height": 2.2,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Warm rim",
+          "role": "rim",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.7,
+            0.3
+          ],
+          "intensity": 8.0,
+          "range": 20.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 40,
+          "angularFalloffDeg": 15,
+          "azimuthDeg": 170,
+          "distance": 2.2,
+          "height": 2.4,
+          "aimHeight": 1.7,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Sky fill",
+          "role": "fill",
+          "shape": "Point",
+          "color": [
+            0.5,
+            0.65,
+            1.0
+          ],
+          "intensity": 1.5,
+          "range": 8.8,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 60,
+          "distance": 2.2,
+          "height": 1.4,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "atmosphere": {
+        "haze": "light",
+        "dust": true,
+        "sun": true,
+        "notes": "Sun haze and floating dust."
+      },
+      "look": {
+        "slot": "warm-grade"
+      },
+      "pose": {
+        "tags": [
+          "walking",
+          "looking into the distance"
+        ]
+      },
+      "animation": {
+        "effects": [
+          {
+            "target": "key",
+            "kind": "drift",
+            "amount": 0.08,
+            "rateHz": 0.05,
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "high-key",
+      "name": "High key",
+      "category": "Classic",
+      "description": "A bright white backdrop, a large soft key and a soft fill. A faint blue edge light from low on one side adds a cool tint to the skin.",
+      "bestIn": "Anywhere. The white backdrop gives a seamless studio look.",
+      "rig": "high key",
+      "tags": [
+        "classic",
+        "bright",
+        "beauty"
+      ],
+      "legacyIds": {
+        "soft-white-high-key": ""
+      },
+      "defaultPalette": "White",
+      "palettes": {
+        "White": {
+          "key": [
+            1.0,
+            0.97,
+            0.93
+          ],
+          "fill": [
+            0.95,
+            0.97,
+            1.0
+          ],
+          "kicker": [
+            0.1,
+            0.35,
+            1.0
+          ],
+          "backdrop": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "bg": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "references": [
+        8,
+        13
+      ],
+      "lights": [
+        {
+          "name": "Beauty key",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.97,
+            0.93
+          ],
+          "intensity": 8.5,
+          "range": 20.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 70,
+          "angularFalloffDeg": 35,
+          "azimuthDeg": 10,
+          "distance": 2.0,
+          "height": 2.7,
+          "aimHeight": 1.55,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Fill",
+          "role": "fill",
+          "shape": "Point",
+          "color": [
+            0.95,
+            0.97,
+            1.0
+          ],
+          "intensity": 3.5,
+          "range": 13.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -40,
+          "distance": 2.2,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        },
+        {
+          "name": "Blue edge",
+          "role": "kicker",
+          "shape": "Spot",
+          "color": [
+            0.1,
+            0.35,
+            1.0
+          ],
+          "intensity": 3.0,
+          "range": 12.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 45,
+          "angularFalloffDeg": 20,
+          "azimuthDeg": -75,
+          "distance": 1.6,
+          "height": 1.2,
+          "aimHeight": 1.5,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": true
+        }
+      ],
+      "backdrop": {
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "distanceBehind": 1.8,
+        "scale": [
+          4.0,
+          3.0,
+          1.0
+        ],
+        "light": {
+          "name": "White wash",
+          "role": "bg",
+          "shape": "Point",
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "intensity": 6.0,
+          "range": 17.5,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 180,
+          "distance": 1.2,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      },
+      "set": {
+        "kind": "sweep",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "props": [],
+        "notes": "A seamless white sweep once the Set tab lands; the white partition until then."
+      },
+      "camera": {
+        "framing": "three-quarter",
+        "height": "eye",
+        "side": "front",
+        "notes": "Three-quarter."
+      },
+      "look": {
+        "slot": "clean-bright"
+      },
+      "pose": {
+        "tags": [
+          "standing",
+          "smiling"
+        ]
+      }
+    },
+    {
+      "id": "rembrandt",
+      "name": "Rembrandt",
+      "category": "Classic",
+      "description": "A key about 45 degrees to one side and about 45 degrees above eye line, with a small fill on the other side and no backdrop light. The check is a small triangle of light on the cheek in shadow.",
+      "bestIn": "Dark or dim scenes. Turn the head a little away from the key.",
+      "rig": "rembrandt",
+      "tags": [
+        "classic",
+        "portrait",
+        "moody"
+      ],
+      "legacyIds": {},
+      "defaultPalette": "Warm",
+      "palettes": {
+        "Warm": {
+          "key": [
+            1.0,
+            0.93,
+            0.82
+          ],
+          "fill": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        },
+        "Cool": {
+          "key": [
+            0.85,
+            0.92,
+            1.0
+          ],
+          "fill": [
+            1.0,
+            0.9,
+            0.8
+          ]
+        }
+      },
+      "references": [],
+      "lights": [
+        {
+          "name": "Key",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.93,
+            0.82
+          ],
+          "intensity": 8.0,
+          "range": 20.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 35,
+          "angularFalloffDeg": 15,
+          "azimuthDeg": 45,
+          "distance": 1.4,
+          "height": 2.9,
+          "aimHeight": 1.6,
+          "characterShadows": true,
+          "objectShadows": true,
+          "specular": true,
+          "aimAt": "face"
+        },
+        {
+          "name": "Fill",
+          "role": "fill",
+          "shape": "Point",
+          "color": [
+            0.85,
+            0.9,
+            1.0
+          ],
+          "intensity": 1.2,
+          "range": 7.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -50,
+          "distance": 2.2,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "camera": {
+        "framing": "three-quarter",
+        "height": "eye",
+        "side": "front",
+        "notes": "Three-quarter."
+      },
+      "look": {
+        "slot": "dark-moody"
+      },
+      "pose": {
+        "tags": [
+          "three-quarter",
+          "looking away"
+        ]
+      }
+    },
+    {
+      "id": "butterfly",
+      "name": "Butterfly",
+      "category": "Classic",
+      "description": "One key straight in front and high, about 2.5 m up, which drops a small shadow under the nose. A low flat fill below the chin lifts the shadow under the jaw.",
+      "bestIn": "Anywhere. Face the camera and keep the chin level.",
+      "rig": "paramount",
+      "tags": [
+        "classic",
+        "beauty",
+        "front"
+      ],
+      "legacyIds": {},
+      "defaultPalette": "Warm white",
+      "palettes": {
+        "Warm white": {
+          "key": [
+            1.0,
+            0.96,
+            0.9
+          ],
+          "fill": [
+            0.95,
+            0.97,
+            1.0
+          ]
+        },
+        "Cool white": {
+          "key": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "fill": [
+            0.85,
+            0.9,
+            1.0
+          ]
+        }
+      },
+      "references": [],
+      "lights": [
+        {
+          "name": "Key",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.96,
+            0.9
+          ],
+          "intensity": 7.5,
+          "range": 19.6,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 50,
+          "angularFalloffDeg": 25,
+          "azimuthDeg": 0,
+          "distance": 1.4,
+          "height": 2.5,
+          "aimHeight": 1.6,
+          "characterShadows": true,
+          "objectShadows": true,
+          "specular": true,
+          "aimAt": "face"
+        },
+        {
+          "name": "Chin fill",
+          "role": "fill",
+          "shape": "Flat",
+          "color": [
+            0.95,
+            0.97,
+            1.0
+          ],
+          "intensity": 2.0,
+          "range": 10.2,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 70,
+          "angularFalloffDeg": 30,
+          "azimuthDeg": 0,
+          "distance": 1.0,
+          "height": 0.95,
+          "aimHeight": 1.5,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false,
+          "aimAt": "face"
+        }
+      ],
+      "camera": {
+        "framing": "close-portrait",
+        "height": "eye",
+        "side": "front",
+        "notes": "Close portrait."
+      },
+      "look": {
+        "slot": "clean-bright"
+      },
+      "pose": {
+        "tags": [
+          "head-on",
+          "chin level"
+        ]
+      }
+    },
+    {
+      "id": "loop",
+      "name": "Loop",
+      "category": "Classic",
+      "description": "A key about 30 degrees to the side and a little above, with a soft fill. The nose throws a small loop of shadow on the cheek.",
+      "bestIn": "Anywhere. A safe, flattering portrait light.",
+      "rig": "loop lighting",
+      "tags": [
+        "classic",
+        "portrait",
+        "soft"
+      ],
+      "legacyIds": {},
+      "defaultPalette": "Warm white",
+      "palettes": {
+        "Warm white": {
+          "key": [
+            1.0,
+            0.95,
+            0.88
+          ],
+          "fill": [
+            0.9,
+            0.93,
+            1.0
+          ]
+        },
+        "Cool white": {
+          "key": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "fill": [
+            1.0,
+            0.92,
+            0.85
+          ]
+        }
+      },
+      "references": [],
+      "lights": [
+        {
+          "name": "Key",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.95,
+            0.88
+          ],
+          "intensity": 7.0,
+          "range": 18.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 45,
+          "angularFalloffDeg": 20,
+          "azimuthDeg": 30,
+          "distance": 1.8,
+          "height": 2.1,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": true,
+          "specular": true,
+          "aimAt": "face"
+        },
+        {
+          "name": "Fill",
+          "role": "fill",
+          "shape": "Point",
+          "color": [
+            0.9,
+            0.93,
+            1.0
+          ],
+          "intensity": 2.0,
+          "range": 10.2,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -40,
+          "distance": 2.2,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "camera": {
+        "framing": "three-quarter",
+        "height": "eye",
+        "side": "front",
+        "notes": "Three-quarter."
+      },
+      "look": {
+        "slot": "clean-bright"
+      },
+      "pose": {
+        "tags": [
+          "three-quarter",
+          "smiling"
+        ]
+      }
+    },
+    {
+      "id": "clamshell",
+      "name": "Clamshell",
+      "category": "Classic",
+      "description": "A key high in front and a fill low in front at about half the strength, so the face is lit from above and below like the two halves of a shell. The beauty rig.",
+      "bestIn": "Anywhere. Face the camera.",
+      "rig": "clamshell",
+      "tags": [
+        "classic",
+        "beauty",
+        "front"
+      ],
+      "legacyIds": {},
+      "defaultPalette": "Warm white",
+      "palettes": {
+        "Warm white": {
+          "key": [
+            1.0,
+            0.96,
+            0.9
+          ],
+          "fill": [
+            0.95,
+            0.97,
+            1.0
+          ]
+        },
+        "Cool white": {
+          "key": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "fill": [
+            0.9,
+            0.95,
+            1.0
+          ]
+        }
+      },
+      "references": [],
+      "lights": [
+        {
+          "name": "Key",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.96,
+            0.9
+          ],
+          "intensity": 7.0,
+          "range": 18.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 55,
+          "angularFalloffDeg": 25,
+          "azimuthDeg": 0,
+          "distance": 1.6,
+          "height": 2.3,
+          "aimHeight": 1.6,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": true,
+          "aimAt": "face"
+        },
+        {
+          "name": "Low fill",
+          "role": "fill",
+          "shape": "Flat",
+          "color": [
+            0.95,
+            0.97,
+            1.0
+          ],
+          "intensity": 3.5,
+          "range": 13.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 60,
+          "angularFalloffDeg": 25,
+          "azimuthDeg": 0,
+          "distance": 1.4,
+          "height": 0.9,
+          "aimHeight": 1.5,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false,
+          "aimAt": "face"
+        }
+      ],
+      "camera": {
+        "framing": "close-portrait",
+        "height": "eye",
+        "side": "front",
+        "notes": "Close portrait."
+      },
+      "look": {
+        "slot": "clean-bright"
+      },
+      "pose": {
+        "tags": [
+          "head-on",
+          "chin level"
+        ]
+      }
+    },
+    {
+      "id": "silhouette",
+      "name": "Silhouette",
+      "category": "Classic",
+      "description": "A bright wash on the wall behind and a rim from behind, with nothing on the front, so the subject reads as a dark shape against the glow.",
+      "bestIn": "Anywhere with room behind the subject. Stand side-on.",
+      "rig": "silhouette",
+      "tags": [
+        "classic",
+        "backlit",
+        "graphic"
+      ],
+      "legacyIds": {},
+      "defaultPalette": "White",
+      "palettes": {
+        "White": {
+          "rim": [
+            1.0,
+            0.97,
+            0.9
+          ],
+          "backdrop": [
+            1.0,
+            0.97,
+            0.9
+          ],
+          "bg": [
+            1.0,
+            0.97,
+            0.9
+          ]
+        },
+        "Sunset": {
+          "rim": [
+            1.0,
+            0.7,
+            0.35
+          ],
+          "bg": [
+            1.0,
+            0.6,
+            0.25
+          ],
+          "backdrop": [
+            1.0,
+            0.55,
+            0.2
+          ]
+        }
+      },
+      "references": [],
+      "lights": [
+        {
+          "name": "Rim",
+          "role": "rim",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.97,
+            0.9
+          ],
+          "intensity": 6.0,
+          "range": 17.5,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 40,
+          "angularFalloffDeg": 15,
+          "azimuthDeg": 160,
+          "distance": 1.8,
+          "height": 2.2,
+          "aimHeight": 1.65,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": true
+        }
+      ],
+      "backdrop": {
+        "color": [
+          1.0,
+          0.97,
+          0.9
+        ],
+        "distanceBehind": 2.2,
+        "scale": [
+          4.0,
+          3.0,
+          1.0
+        ],
+        "light": {
+          "name": "Wall wash",
+          "role": "bg",
+          "shape": "Point",
+          "color": [
+            1.0,
+            0.97,
+            0.9
+          ],
+          "intensity": 8.0,
+          "range": 20.3,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 180,
+          "distance": 1.2,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      },
+      "set": {
+        "kind": "sweep",
+        "colorRole": "backdrop",
+        "props": [],
+        "notes": "A bright sweep once the Set tab lands."
+      },
+      "camera": {
+        "framing": "full-body",
+        "height": "eye",
+        "side": "right",
+        "notes": "Full body, side-on."
+      },
+      "look": {
+        "slot": "dark-moody"
+      },
+      "pose": {
+        "tags": [
+          "profile",
+          "standing"
+        ]
+      }
+    },
+    {
+      "id": "low-key",
+      "name": "Low key",
+      "category": "Classic",
+      "description": "One narrow key from the side, no fill and no backdrop light. Most of the frame stays dark.",
+      "bestIn": "Dark scenes. Turn a little towards the light.",
+      "rig": "low key",
+      "tags": [
+        "classic",
+        "dark",
+        "moody"
+      ],
+      "legacyIds": {},
+      "defaultPalette": "Warm white",
+      "palettes": {
+        "Warm white": {
+          "key": [
+            1.0,
+            0.9,
+            0.78
+          ]
+        },
+        "Cool white": {
+          "key": [
+            0.8,
+            0.9,
+            1.0
+          ]
+        }
+      },
+      "references": [],
+      "lights": [
+        {
+          "name": "Key",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.9,
+            0.78
+          ],
+          "intensity": 9.0,
+          "range": 21.5,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 25,
+          "angularFalloffDeg": 6,
+          "azimuthDeg": 80,
+          "distance": 1.5,
+          "height": 1.8,
+          "aimHeight": 1.6,
+          "characterShadows": true,
+          "objectShadows": true,
+          "specular": true,
+          "aimAt": "face"
+        }
+      ],
+      "camera": {
+        "framing": "close-portrait",
+        "height": "eye",
+        "side": "front",
+        "notes": "Close portrait."
+      },
+      "look": {
+        "slot": "dark-moody"
+      },
+      "pose": {
+        "tags": [
+          "three-quarter",
+          "serious"
+        ]
+      }
+    },
+    {
+      "id": "club-strobe",
+      "name": "Club strobe",
+      "category": "Animated",
+      "description": "Magenta and cyan washes from either side and a hard white strobe from the front. The strobe is OFF until you switch it on in the Lighting tab, and it never flashes faster than 3 times a second. Flashing light can affect people with photosensitive epilepsy.",
+      "bestIn": "Dark interior, any framing. Turn the strobe on for one shot, then off again.",
+      "rig": "club",
+      "tags": [
+        "animated",
+        "strobe",
+        "neon",
+        "party"
+      ],
+      "legacyIds": {},
+      "defaultPalette": "Magenta and cyan",
+      "palettes": {
+        "Magenta and cyan": {
+          "key": [
+            1.0,
+            0.05,
+            0.8
+          ],
+          "key2": [
+            0.05,
+            0.8,
+            1.0
+          ],
+          "kicker": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "Red and blue": {
+          "key": [
+            1.0,
+            0.1,
+            0.1
+          ],
+          "key2": [
+            0.1,
+            0.2,
+            1.0
+          ],
+          "kicker": [
+            0.9,
+            0.95,
+            1.0
+          ]
+        },
+        "Green and violet": {
+          "key": [
+            0.2,
+            1.0,
+            0.3
+          ],
+          "key2": [
+            0.55,
+            0.15,
+            1.0
+          ],
+          "kicker": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "references": [
+        2,
+        11
+      ],
+      "lights": [
+        {
+          "name": "Magenta wash",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.05,
+            0.8
+          ],
+          "intensity": 7.0,
+          "range": 18.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 45,
+          "angularFalloffDeg": 15,
+          "azimuthDeg": 60,
+          "distance": 1.6,
+          "height": 1.9,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true,
+          "aimAt": "face"
+        },
+        {
+          "name": "Cyan wash",
+          "role": "key2",
+          "shape": "Spot",
+          "color": [
+            0.05,
+            0.8,
+            1.0
+          ],
+          "intensity": 7.0,
+          "range": 18.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 45,
+          "angularFalloffDeg": 15,
+          "azimuthDeg": -60,
+          "distance": 1.6,
+          "height": 1.9,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true,
+          "aimAt": "face"
+        },
+        {
+          "name": "Strobe",
+          "role": "kicker",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "intensity": 6.0,
+          "range": 17.5,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 60,
+          "angularFalloffDeg": 20,
+          "azimuthDeg": 15,
+          "distance": 1.8,
+          "height": 2.5,
+          "aimHeight": 1.55,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": true
+        }
+      ],
+      "camera": {
+        "framing": "chest-up",
+        "height": "eye",
+        "side": "front",
+        "notes": "Chest-up at eye level."
+      },
+      "look": {
+        "slot": "neon-night"
+      },
+      "pose": {
+        "tags": [
+          "dancing",
+          "arms up"
+        ]
+      },
+      "animation": {
+        "effects": [
+          {
+            "target": "kicker",
+            "kind": "strobe",
+            "amount": 1.0,
+            "rateHz": 2.0,
+            "enabled": false
+          },
+          {
+            "target": "key",
+            "kind": "pulse",
+            "amount": 0.25,
+            "rateHz": 0.5,
+            "enabled": false
+          },
+          {
+            "target": "key2",
+            "kind": "pulse",
+            "amount": 0.25,
+            "rateHz": 0.5,
+            "enabled": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "campfire-flicker",
+      "name": "Campfire flicker",
+      "category": "Animated",
+      "description": "A low orange light in front, where a fire would be, with a faint blue moon from behind. The fire flickers and drifts. Switch the flicker off in the Lighting tab for a still frame.",
+      "bestIn": "Outdoors at night, sitting or crouching.",
+      "rig": "firelight",
+      "tags": [
+        "animated",
+        "fire",
+        "warm",
+        "night"
+      ],
+      "legacyIds": {},
+      "defaultPalette": "Campfire",
+      "palettes": {
+        "Campfire": {
+          "key": [
+            1.0,
+            0.42,
+            0.08
+          ],
+          "rim": [
+            0.25,
+            0.35,
+            0.7
+          ]
+        },
+        "Embers": {
+          "key": [
+            1.0,
+            0.2,
+            0.03
+          ],
+          "rim": [
+            0.15,
+            0.1,
+            0.4
+          ]
+        }
+      },
+      "references": [
+        9
+      ],
+      "lights": [
+        {
+          "name": "Fire",
+          "role": "key",
+          "shape": "Point",
+          "color": [
+            1.0,
+            0.42,
+            0.08
+          ],
+          "intensity": 5.0,
+          "range": 16.0,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 0,
+          "distance": 1.1,
+          "height": 0.5,
+          "aimHeight": null,
+          "characterShadows": true,
+          "objectShadows": true,
+          "specular": true
+        },
+        {
+          "name": "Moon",
+          "role": "rim",
+          "shape": "Spot",
+          "color": [
+            0.25,
+            0.35,
+            0.7
+          ],
+          "intensity": 2.5,
+          "range": 9.5,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 50,
+          "angularFalloffDeg": 25,
+          "azimuthDeg": 160,
+          "distance": 2.0,
+          "height": 2.6,
+          "aimHeight": 1.5,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": true
+        }
+      ],
+      "camera": {
+        "framing": "chest-up",
+        "height": "eye",
+        "side": "front",
+        "notes": "Chest-up, a little below eye level."
+      },
+      "look": {
+        "slot": "warm-grade"
+      },
+      "pose": {
+        "tags": [
+          "sitting",
+          "looking into the fire"
+        ]
+      },
+      "animation": {
+        "effects": [
+          {
+            "target": "key",
+            "kind": "flicker",
+            "amount": 0.35,
+            "rateHz": 9.0,
+            "enabled": true,
+            "seed": 1701
+          },
+          {
+            "target": "key",
+            "kind": "drift",
+            "amount": 0.12,
+            "rateHz": 0.6,
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "neon-sign-flicker",
+      "name": "Neon sign flicker",
+      "category": "Animated",
+      "description": "A pink sign that stutters, lighting one side of the face and washing the wall behind. The sign and its wall flicker together, as a failing tube does.",
+      "bestIn": "Dark interior or alley, chest-up.",
+      "rig": "neon sign",
+      "tags": [
+        "animated",
+        "neon",
+        "flicker",
+        "backdrop"
+      ],
+      "legacyIds": {},
+      "defaultPalette": "Pink sign",
+      "palettes": {
+        "Pink sign": {
+          "key": [
+            1.0,
+            0.1,
+            0.55
+          ],
+          "fill": [
+            0.5,
+            0.05,
+            0.35
+          ],
+          "backdrop": [
+            0.35,
+            0.02,
+            0.18
+          ],
+          "bg": [
+            1.0,
+            0.1,
+            0.55
+          ]
+        },
+        "Green sign": {
+          "key": [
+            0.1,
+            1.0,
+            0.4
+          ],
+          "fill": [
+            0.05,
+            0.5,
+            0.2
+          ],
+          "backdrop": [
+            0.02,
+            0.35,
+            0.12
+          ],
+          "bg": [
+            0.1,
+            1.0,
+            0.4
+          ]
+        },
+        "Blue sign": {
+          "key": [
+            0.15,
+            0.4,
+            1.0
+          ],
+          "fill": [
+            0.05,
+            0.15,
+            0.5
+          ],
+          "backdrop": [
+            0.03,
+            0.1,
+            0.4
+          ],
+          "bg": [
+            0.15,
+            0.4,
+            1.0
+          ]
+        }
+      },
+      "references": [
+        6,
+        12
+      ],
+      "lights": [
+        {
+          "name": "Sign",
+          "role": "key",
+          "shape": "Spot",
+          "color": [
+            1.0,
+            0.1,
+            0.55
+          ],
+          "intensity": 7.0,
+          "range": 18.9,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 40,
+          "angularFalloffDeg": 12,
+          "azimuthDeg": 50,
+          "distance": 1.5,
+          "height": 1.8,
+          "aimHeight": 1.55,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true,
+          "aimAt": "face"
+        },
+        {
+          "name": "Sign spill",
+          "role": "fill",
+          "shape": "Point",
+          "color": [
+            0.5,
+            0.05,
+            0.35
+          ],
+          "intensity": 1.8,
+          "range": 6.8,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -40,
+          "distance": 2.0,
+          "height": 1.4,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "backdrop": {
+        "color": [
+          0.35,
+          0.02,
+          0.18
+        ],
+        "distanceBehind": 2.0,
+        "scale": [
+          4.0,
+          3.0,
+          1.0
+        ],
+        "light": {
+          "name": "Sign glow",
+          "role": "bg",
+          "shape": "Point",
+          "color": [
+            1.0,
+            0.1,
+            0.55
+          ],
+          "intensity": 3.5,
+          "range": 13.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 180,
+          "distance": 1.2,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      },
+      "set": {
+        "kind": "sweep",
+        "colorRole": "backdrop",
+        "props": [],
+        "notes": "A dark sweep once the Set tab lands; the partition panel until then."
+      },
+      "camera": {
+        "framing": "chest-up",
+        "height": "eye",
+        "side": "front",
+        "notes": "Chest-up at eye level."
+      },
+      "look": {
+        "slot": "neon-night"
+      },
+      "pose": {
+        "tags": [
+          "three-quarter",
+          "looking away"
+        ]
+      },
+      "animation": {
+        "effects": [
+          {
+            "target": "key",
+            "kind": "flicker",
+            "amount": 0.7,
+            "rateHz": 5.0,
+            "enabled": true,
+            "seed": 42
+          },
+          {
+            "target": "bg",
+            "kind": "flicker",
+            "amount": 0.8,
+            "rateHz": 5.0,
+            "enabled": true,
+            "seed": 42
+          }
+        ]
+      }
+    }
+  ]
+}

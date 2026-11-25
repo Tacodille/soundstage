@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "fireside",
+  "name": "Fireside",
+  "description": "A manor fireplace behind the subject with an armchair, a rug and a floor lamp beside it.",
+  "status": "untested",
+  "anchor": { "x": 0, "z": -2.0, "yawDeg": 0 },
+  "objects": [
+    { "name": "Fireplace", "model": "bgcommon/hou/indoor/general/0073/bgparts/fun_b0_m0073.mdl", "offset": [0, 0, 0], "yawDeg": 180, "scale": 1 },
+    { "name": "Rug", "model": "bgcommon/hou/indoor/general/0139/bgparts/fun_b0_m0139.mdl", "offset": [0, 0, 1.4], "yawDeg": 0, "scale": 0.45 },
+    { "name": "Armchair", "model": "bgcommon/hou/indoor/general/0155/bgparts/fun_b0_m0155.mdl", "offset": [-1.5, 0, 1.2], "yawDeg": 35, "scale": 1 },
+    { "name": "Floor lamp", "model": "bgcommon/hou/indoor/general/0146/bgparts/fun_b0_m0146.mdl", "offset": [1.7, 0, 0.1], "yawDeg": 0, "scale": 1 }
+  ]
+}

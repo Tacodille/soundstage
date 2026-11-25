@@ -1,0 +1,97 @@
+{
+  "formatVersion": 1,
+  "presets": [
+    {
+      "id": "beta-test-look",
+      "name": "Beta test look",
+      "category": "Mine",
+      "description": "A magenta spot hits one side of the face from the left while the rest of him and the backdrop sit in deep blue. Face goes half pink, half blue.",
+      "bestIn": "Anywhere, since the backdrop supplies the blue. Best with the camera at chest height.",
+      "references": [
+        6,
+        12
+      ],
+      "lights": [
+        {
+          "name": "Magenta key",
+          "shape": "Spot",
+          "color": [
+            1,
+            0.05,
+            0.85
+          ],
+          "intensity": 9,
+          "range": 12,
+          "falloff": "Quadratic",
+          "falloffFactor": 1,
+          "coneDeg": 30,
+          "angularFalloffDeg": 8,
+          "azimuthDeg": 60,
+          "distance": 1.5,
+          "height": 1.7,
+          "aimHeight": 1.6,
+          "characterShadows": true,
+          "objectShadows": false,
+          "specular": true
+        },
+        {
+          "name": "Blue fill",
+          "shape": "Point",
+          "color": [
+            0.05,
+            0.1,
+            0.8
+          ],
+          "intensity": 3,
+          "range": 8,
+          "falloff": "Quadratic",
+          "falloffFactor": 1,
+          "coneDeg": 30,
+          "angularFalloffDeg": 10,
+          "azimuthDeg": -50,
+          "distance": 2,
+          "height": 1.5,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ],
+      "backdrop": {
+        "color": [
+          0.03,
+          0.05,
+          0.4
+        ],
+        "distanceBehind": 2,
+        "scale": [
+          4,
+          3,
+          1
+        ],
+        "light": {
+          "name": "Blue wash",
+          "shape": "Point",
+          "color": [
+            0.1,
+            0.15,
+            1
+          ],
+          "intensity": 3,
+          "range": 5,
+          "falloff": "Quadratic",
+          "falloffFactor": 1,
+          "coneDeg": 30,
+          "angularFalloffDeg": 10,
+          "azimuthDeg": 180,
+          "distance": 1.2,
+          "height": 1.2,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      }
+    }
+  ]
+}

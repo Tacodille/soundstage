@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "throne-room",
+  "name": "Throne room",
+  "description": "A scaled-down throne with a tall pillar each side. Dramatic behind a low-key rig.",
+  "status": "untested",
+  "anchor": { "x": 0, "z": -2.2, "yawDeg": 0 },
+  "objects": [
+    { "name": "Throne", "model": "bgcommon/hou/indoor/general/0272/bgparts/fun_b0_m0272.mdl", "offset": [0, 0, 0], "yawDeg": 0, "scale": 0.55 },
+    { "name": "Pillar left", "model": "bgcommon/hou/indoor/general/0054/bgparts/fun_b0_m0054.mdl", "offset": [2.6, 0, 0.6], "yawDeg": 0, "scale": 1 },
+    { "name": "Pillar right", "model": "bgcommon/hou/indoor/general/0054/bgparts/fun_b0_m0054.mdl", "offset": [-2.6, 0, 0.6], "yawDeg": 0, "scale": 1 }
+  ]
+}

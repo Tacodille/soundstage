@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "crates",
+  "name": "Crates and barrels",
+  "description": "A small stack of shipping crates and a few wine barrels to the subject's right.",
+  "status": "untested",
+  "anchor": { "x": -1.9, "z": -1.0, "yawDeg": 0 },
+  "objects": [
+    { "name": "Crate 1", "model": "bgcommon/hou/indoor/general/0308/bgparts/fun_b0_m0308.mdl", "offset": [0, 0, 0], "yawDeg": 0, "scale": 1 },
+    { "name": "Crate 2", "model": "bgcommon/hou/indoor/general/0308/bgparts/fun_b0_m0308.mdl", "offset": [0.75, 0, 0.05], "yawDeg": 12, "scale": 1 },
+    { "name": "Crate 3", "model": "bgcommon/hou/indoor/general/0308/bgparts/fun_b0_m0308.mdl", "offset": [0.3, 0.69, 0], "yawDeg": 35, "scale": 1 },
+    { "name": "Crate 4", "model": "bgcommon/hou/indoor/general/0308/bgparts/fun_b0_m0308.mdl", "offset": [-0.1, 0, 0.8], "yawDeg": -18, "scale": 1 },
+    { "name": "Barrel 1", "model": "bgcommon/hou/indoor/general/0309/bgparts/fun_b0_m0309.mdl", "offset": [-1.0, 0, 0.1], "yawDeg": 0, "scale": 1 },
+    { "name": "Barrel 2", "model": "bgcommon/hou/indoor/general/0309/bgparts/fun_b0_m0309.mdl", "offset": [-1.8, 0, 0.0], "yawDeg": 0, "scale": 1 },
+    { "name": "Barrel 3", "model": "bgcommon/hou/indoor/general/0309/bgparts/fun_b0_m0309.mdl", "offset": [-1.4, 0, 0.8], "yawDeg": 0, "scale": 1 }
+  ]
+}

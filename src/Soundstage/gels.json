@@ -1,0 +1,95 @@
+{
+  "formatVersion": 1,
+  "gels": [
+    {
+      "name": "Warm white",
+      "hex": "#fff1dc",
+      "note": "A little warmer than neutral. Skin looks kind."
+    },
+    {
+      "name": "Cool white",
+      "hex": "#e6f0ff",
+      "note": "A little cooler than neutral."
+    },
+    {
+      "name": "Straw",
+      "hex": "#ffe08a",
+      "note": "Pale yellow, the colour of a low afternoon."
+    },
+    {
+      "name": "Amber",
+      "hex": "#ffb347",
+      "note": "Tungsten and candle."
+    },
+    {
+      "name": "Deep orange",
+      "hex": "#ff7a1a",
+      "note": "Firelight and sunset."
+    },
+    {
+      "name": "Coral",
+      "hex": "#ff7f6e",
+      "note": "Warm pink-orange; flatters most skin."
+    },
+    {
+      "name": "Rose",
+      "hex": "#ff7aa8",
+      "note": "Soft pink."
+    },
+    {
+      "name": "Magenta",
+      "hex": "#ff1ec8",
+      "note": "Hard club pink."
+    },
+    {
+      "name": "Red",
+      "hex": "#ff2a2a",
+      "note": "Danger and neon."
+    },
+    {
+      "name": "Lavender",
+      "hex": "#b69cff",
+      "note": "Cool, soft violet."
+    },
+    {
+      "name": "Violet",
+      "hex": "#8040ff",
+      "note": "Night club and ultraviolet."
+    },
+    {
+      "name": "Deep blue",
+      "hex": "#2646ff",
+      "note": "Moonlight and deep shadow fill."
+    },
+    {
+      "name": "Steel blue",
+      "hex": "#6fa0e0",
+      "note": "Overcast sky."
+    },
+    {
+      "name": "Cyan",
+      "hex": "#14d2ff",
+      "note": "Cold neon and screens."
+    },
+    {
+      "name": "Teal",
+      "hex": "#10c0a8",
+      "note": "The usual partner for orange."
+    },
+    {
+      "name": "Mint",
+      "hex": "#8fffc0",
+      "note": "Pale green, a little sickly on skin."
+    },
+    {
+      "name": "Green",
+      "hex": "#2cff5a",
+      "note": "Hard neon green."
+    },
+    {
+      "name": "Lime",
+      "hex": "#c6ff2e",
+      "note": "Acid yellow-green."
+    }
+  ]
+}

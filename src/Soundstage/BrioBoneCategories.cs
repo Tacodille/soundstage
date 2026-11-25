@@ -1,0 +1,37 @@
+// Generated from Brio v0.8.0.12, Brio/Resources/Embedded/Data/BoneCategories.json (the "Filter" categories only).
+// Brio decides which bones a pose import applies by these name prefixes (Brio/Game/Posing/BoneFilter.cs lines 109-149).
+namespace Soundstage;
+
+public static class BrioBoneCategories
+{
+    /// <summary>Filter category id to the bone-name prefixes it covers.</summary>
+    public static readonly (string Id, string[] Prefixes)[] Filters =
+    {
+        ("hair", new string[] { "j_ex_h", "j_kami_", "j_ex_met_va" }),
+        ("head", new string[] { "j_kao", "j_f_face" }),
+        ("face", new string[] { "j_f_miken_01_l", "j_f_miken_01_r", "j_f_miken_02_l", "j_f_miken_02_r", "j_f_mmayu_l", "j_f_mmayu_r", "j_f_mayu_l", "j_f_mayu_r", "j_f_dhoho_l", "j_f_shoho_l", "j_f_dhoho_r", "j_f_shoho_r", "j_f_dmemoto_r", "j_f_dmemoto_l", "j_f_hoho_r", "j_f_hoho_l", "j_f_uhana", "j_f_dmiken_l", "j_f_dmiken_r", "j_f_hana_l", "j_f_hana_r" }),
+        ("eyes", new string[] { "j_f_eye_l", "j_f_eye_r", "j_f_eyepuru_l", "j_f_eyepuru_r", "j_f_mabdn_01_l", "j_f_mabdn_02out_l", "j_f_mabdn_03in_l", "j_f_mabdn_01_r", "j_f_mabdn_02out_r", "j_f_mabdn_03in_r", "j_f_mabup_01_l", "j_f_mabup_02out_l", "j_f_mabup_03in_l", "j_f_mabup_01_r", "j_f_mabup_02out_r", "j_f_mabup_03in_r", "j_f_mab_l", "j_f_mab_r" }),
+        ("lips", new string[] { "j_f_dmlip_01_l", "j_f_dmlip_02_l", "j_f_umlip_01_l", "j_f_umlip_02_l", "j_f_dmlip_01_r", "j_f_dmlip_02_r", "j_f_umlip_01_r", "j_f_umlip_02_r", "j_f_dlip_01_r", "j_f_dlip_02_r", "j_f_ulip_01_r", "j_f_ulip_02_r", "j_f_dlip_01_l", "j_f_dlip_02_l", "j_f_ulip_01_l", "j_f_ulip_02_l", "j_f_uslip_l", "j_f_uslip_r", "j_f_dslip_l", "j_f_dslip_r" }),
+        ("jaw", new string[] { "j_f_ago", "j_f_dago", "j_f_bero_01", "j_f_bero_02", "j_f_bero_03", "j_f_hagukidn", "j_f_hagukiup" }),
+        ("ears", new string[] { "n_ear_a_", "n_ear_b_", "n_ear_", "j_mimi", "j_zer" }),
+        ("body", new string[] { "n_root", "n_hara", "j_kosi", "j_kubi", "j_sebo_", "j_mune_", "j_sako_" }),
+        ("handsLeft", new string[] { "j_ude_b_r", "j_ko_a_r", "n_hhiji_r", "j_hito_a_r", "j_kusu_a_r", "j_ko_b_r", "j_oya_a_r", "j_hito_b_r", "j_naka_a_r", "j_kusu_b_r", "j_naka_b_r", "j_oya_b_r", "j_te_r", "j_hand_r", "n_hte_r", "n_hkata_r", "j_ude_a_r" }),
+        ("handsRight", new string[] { "j_ude_b_l", "j_ko_a_l", "n_hhiji_l", "j_hito_a_l", "j_kusu_a_l", "j_ko_b_l", "j_oya_a_l", "j_hito_b_l", "j_naka_a_l", "j_kusu_b_l", "j_naka_b_l", "j_oya_b_l", "j_te_l", "j_hand_l", "n_hte_l", "n_hkata_l", "j_ude_a_l" }),
+        ("legs", new string[] { "j_asi_" }),
+        ("tail", new string[] { "n_sippo_" }),
+        ("ivcsAbdomen", new string[] { "iv_c_mune_", "iv_kyokin_phys_", "iv_fukubu_phys", "iv_fukubu_phys_" }),
+        ("ivcsHandsRight", new string[] { "iv_ko_c_r", "iv_kusu_c_r", "iv_naka_c_r", "iv_hito_c_r", "iv_nitoukin_r" }),
+        ("ivcsHandsLeft", new string[] { "iv_ko_c_l", "iv_kusu_c_l", "iv_naka_c_l", "iv_hito_c_l", "iv_nitoukin_l" }),
+        ("ivcsLegs", new string[] { "iv_daitai_phys_", "iv_asi_" }),
+        ("ivcsButt", new string[] { "iv_koumon", "iv_koumon_", "iv_shiri_", "ya_shiri_phys_" }),
+        ("ivcsPenis", new string[] { "iv_kougan_", "iv_ochinko_", "j_penis", "j_balls", "iv_funyachin_phy_", "iv_kintama_phys_" }),
+        ("ivcsVagina", new string[] { "iv_omanko", "iv_kuritto", "iv_inshin_" }),
+        ("clothing", new string[] { "n_hijisoubi_", "n_hizasoubi_", "n_kataarmor_", "j_sk_", "j_ex_top_", "j_ex_met_a", "j_ex_met_b", "j_ex_met_c", "j_ex_met_d", "j_zacc" }),
+        ("weapon", new string[] { "n_buki_", "j_buki" }),
+        ("prop", new string[] {  }),
+        ("ornament", new string[] {  }),
+        ("ex", new string[] { "j_f_noanim_ago", "J_f_eyeprm_01_", "j_f_eyeprm_02_", "j_f_irisprm_", "j_f_irisprm_", "j_f_noanim_eyesize_", "j_f_eyeprmroll_r" }),
+        ("legacy", new string[] { "j_ago", "j_f_dmab_", "j_f_umab_", "j_f_memoto", "j_f_miken_r", "j_f_miken_l", "j_f_ulip_b", "j_f_lip_l", "j_f_lip_r", "j_f_dlip_b", "j_f_dlip_a", "j_f_ulip_a" }),
+        ("other", new string[] {  }),
+    };
+}

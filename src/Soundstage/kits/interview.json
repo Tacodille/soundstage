@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "interview",
+  "name": "Interview chairs",
+  "description": "Two armchairs angled towards each other with a stool between them, behind the subject.",
+  "status": "untested",
+  "anchor": { "x": 0, "z": -1.4, "yawDeg": 0 },
+  "objects": [
+    { "name": "Armchair left", "model": "bgcommon/hou/indoor/general/0155/bgparts/fun_b0_m0155.mdl", "offset": [1.2, 0, 0], "yawDeg": -50, "scale": 1 },
+    { "name": "Armchair right", "model": "bgcommon/hou/indoor/general/0155/bgparts/fun_b0_m0155.mdl", "offset": [-1.2, 0, 0], "yawDeg": 50, "scale": 1 },
+    { "name": "Stool", "model": "bgcommon/hou/indoor/general/0303/bgparts/fun_b0_m0303.mdl", "offset": [0, 0, 0.1], "yawDeg": 0, "scale": 1 }
+  ]
+}

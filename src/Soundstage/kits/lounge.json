@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "lounge",
+  "name": "Lounge corner",
+  "description": "A couch, a floor lamp, a stool and a rug off to the subject's left, turned a little towards the camera.",
+  "status": "untested",
+  "anchor": { "x": 1.9, "z": -0.6, "yawDeg": -25 },
+  "objects": [
+    { "name": "Rug", "model": "bgcommon/hou/indoor/general/0139/bgparts/fun_b0_m0139.mdl", "offset": [0, 0, 0.6], "yawDeg": 0, "scale": 0.5 },
+    { "name": "Couch", "model": "bgcommon/hou/indoor/general/0158/bgparts/fun_b0_m0158.mdl", "offset": [0, 0, -0.1], "yawDeg": 0, "scale": 1 },
+    { "name": "Floor lamp", "model": "bgcommon/hou/indoor/general/0146/bgparts/fun_b0_m0146.mdl", "offset": [1.35, 0, -0.2], "yawDeg": 0, "scale": 1 },
+    { "name": "Stool", "model": "bgcommon/hou/indoor/general/0303/bgparts/fun_b0_m0303.mdl", "offset": [-0.4, 0, 1.2], "yawDeg": 20, "scale": 1 }
+  ]
+}

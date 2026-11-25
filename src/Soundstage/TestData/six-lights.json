@@ -1,0 +1,193 @@
+{
+  "formatVersion": 2,
+  "scenes": [
+    {
+      "id": "test-six-lights",
+      "name": "Six lights (test)",
+      "category": "Test",
+      "description": "Six small point lights in a ring around the subject, each a different colour. If the cap holds, all six show.",
+      "bestIn": "Dev tab test only.",
+      "rig": "test",
+      "tags": [
+        "test"
+      ],
+      "legacyIds": {},
+      "defaultPalette": "Rainbow",
+      "palettes": {
+        "Rainbow": {
+          "key": [
+            1.0,
+            0.2,
+            0.2
+          ],
+          "fill": [
+            1.0,
+            0.7,
+            0.1
+          ],
+          "rim": [
+            0.2,
+            1.0,
+            0.2
+          ],
+          "kicker": [
+            0.1,
+            0.8,
+            1.0
+          ],
+          "kicker2": [
+            0.3,
+            0.2,
+            1.0
+          ],
+          "kicker3": [
+            1.0,
+            0.2,
+            0.8
+          ]
+        }
+      },
+      "references": [],
+      "lights": [
+        {
+          "name": "Light 1",
+          "role": "key",
+          "shape": "Point",
+          "color": [
+            1.0,
+            0.2,
+            0.2
+          ],
+          "intensity": 3.0,
+          "range": 12.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 0,
+          "distance": 1.6,
+          "height": 1.6,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        },
+        {
+          "name": "Light 2",
+          "role": "fill",
+          "shape": "Point",
+          "color": [
+            1.0,
+            0.7,
+            0.1
+          ],
+          "intensity": 3.0,
+          "range": 12.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 60,
+          "distance": 1.6,
+          "height": 1.6,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        },
+        {
+          "name": "Light 3",
+          "role": "rim",
+          "shape": "Point",
+          "color": [
+            0.2,
+            1.0,
+            0.2
+          ],
+          "intensity": 3.0,
+          "range": 12.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 120,
+          "distance": 1.6,
+          "height": 1.6,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        },
+        {
+          "name": "Light 4",
+          "role": "kicker",
+          "shape": "Point",
+          "color": [
+            0.1,
+            0.8,
+            1.0
+          ],
+          "intensity": 3.0,
+          "range": 12.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": 180,
+          "distance": 1.6,
+          "height": 1.6,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        },
+        {
+          "name": "Light 5",
+          "role": "kicker2",
+          "shape": "Point",
+          "color": [
+            0.3,
+            0.2,
+            1.0
+          ],
+          "intensity": 3.0,
+          "range": 12.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -120,
+          "distance": 1.6,
+          "height": 1.6,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        },
+        {
+          "name": "Light 6",
+          "role": "kicker3",
+          "shape": "Point",
+          "color": [
+            1.0,
+            0.2,
+            0.8
+          ],
+          "intensity": 3.0,
+          "range": 12.4,
+          "falloff": "Quadratic",
+          "falloffFactor": 1.0,
+          "coneDeg": 30.0,
+          "angularFalloffDeg": 10.0,
+          "azimuthDeg": -60,
+          "distance": 1.6,
+          "height": 1.6,
+          "aimHeight": null,
+          "characterShadows": false,
+          "objectShadows": false,
+          "specular": false
+        }
+      ]
+    }
+  ]
+}

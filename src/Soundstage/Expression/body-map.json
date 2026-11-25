@@ -1,0 +1,61 @@
+{
+  "formatVersion": 1,
+  "comment": "Body retarget map for the c0701 skeleton (male Miqo'te, TBSE-X) and, by the same bone names, any other FFXIV body. Data only: edit this file, not the code. Bone names and parents are from the FFXIV skeleton as the earring-physics collider dumps and Brio's bone categories show them; the in-game checklist step 'Check the body map' reports every bone that is missing and every segment that does not point the expected way at rest.",
+  "frame": {
+    "comment": "Rows give model x, y and z as dot products with MediaPipe's world x (picture right), y (down), z (away from the camera). A person facing the camera has their left at +x; the model is y up and faces +z with the character's left at +x, so up flips y and facing the camera flips z. A mirrored result means flip x here, or tick Mirror in the tab.",
+    "x": [1, 0, 0],
+    "y": [0, -1, 0],
+    "z": [0, 0, -1]
+  },
+  "minVisibility": 0.3,
+  "bones": [
+    { "bone": "n_root", "parent": "" },
+    { "bone": "n_hara", "parent": "n_root" },
+    { "bone": "j_kosi", "parent": "n_hara" },
+    { "bone": "j_sebo_a", "parent": "j_kosi" },
+    { "bone": "j_sebo_b", "parent": "j_sebo_a" },
+    { "bone": "j_sebo_c", "parent": "j_sebo_b" },
+    { "bone": "j_kubi", "parent": "j_sebo_c" },
+    { "bone": "j_kao", "parent": "j_kubi" },
+    { "bone": "j_sako_l", "parent": "j_sebo_c" },
+    { "bone": "j_ude_a_l", "parent": "j_sako_l" },
+    { "bone": "j_ude_b_l", "parent": "j_ude_a_l" },
+    { "bone": "j_te_l", "parent": "j_ude_b_l" },
+    { "bone": "j_naka_a_l", "parent": "j_te_l" },
+    { "bone": "j_sako_r", "parent": "j_sebo_c" },
+    { "bone": "j_ude_a_r", "parent": "j_sako_r" },
+    { "bone": "j_ude_b_r", "parent": "j_ude_a_r" },
+    { "bone": "j_te_r", "parent": "j_ude_b_r" },
+    { "bone": "j_naka_a_r", "parent": "j_te_r" },
+    { "bone": "j_asi_a_l", "parent": "j_kosi" },
+    { "bone": "j_asi_b_l", "parent": "j_asi_a_l" },
+    { "bone": "j_asi_c_l", "parent": "j_asi_b_l" },
+    { "bone": "j_asi_d_l", "parent": "j_asi_c_l" },
+    { "bone": "j_asi_a_r", "parent": "j_kosi" },
+    { "bone": "j_asi_b_r", "parent": "j_asi_a_r" },
+    { "bone": "j_asi_c_r", "parent": "j_asi_b_r" },
+    { "bone": "j_asi_d_r", "parent": "j_asi_c_r" }
+  ],
+  "joints": [
+    { "id": "spine", "bone": "j_sebo_a", "child": ["j_sebo_b"], "from": ["left_hip", "right_hip"], "to": ["left_shoulder", "right_shoulder"], "swingLimitDeg": 60, "twistLimitDeg": 30, "expect": [0, 1, 0], "expectTolDeg": 60 },
+    { "id": "neck", "bone": "j_kubi", "child": ["j_kao"], "from": ["left_shoulder", "right_shoulder"], "to": ["left_ear", "right_ear"], "swingLimitDeg": 50, "twistLimitDeg": 45, "expect": [0, 1, 0], "expectTolDeg": 60 },
+
+    { "id": "clavicleL", "bone": "j_sako_l", "child": ["j_ude_a_l"], "from": ["left_shoulder", "right_shoulder"], "to": ["left_shoulder"], "swingLimitDeg": 60, "twistLimitDeg": 10 },
+    { "id": "upperArmL", "bone": "j_ude_a_l", "child": ["j_ude_b_l"], "from": ["left_shoulder"], "to": ["left_elbow"], "swingLimitDeg": 175, "twistLimitDeg": 90, "expect": [0, -1, 0], "expectTolDeg": 80 },
+    { "id": "forearmL", "bone": "j_ude_b_l", "child": ["j_te_l"], "from": ["left_elbow"], "to": ["left_wrist"], "swingLimitDeg": 160, "twistLimitDeg": 90 },
+    { "id": "handL", "bone": "j_te_l", "child": ["j_naka_a_l"], "from": ["left_wrist"], "to": ["left_index", "left_pinky"], "swingLimitDeg": 80, "twistLimitDeg": 60 },
+
+    { "id": "clavicleR", "bone": "j_sako_r", "child": ["j_ude_a_r"], "from": ["right_shoulder", "left_shoulder"], "to": ["right_shoulder"], "swingLimitDeg": 60, "twistLimitDeg": 10 },
+    { "id": "upperArmR", "bone": "j_ude_a_r", "child": ["j_ude_b_r"], "from": ["right_shoulder"], "to": ["right_elbow"], "swingLimitDeg": 175, "twistLimitDeg": 90, "expect": [0, -1, 0], "expectTolDeg": 80 },
+    { "id": "forearmR", "bone": "j_ude_b_r", "child": ["j_te_r"], "from": ["right_elbow"], "to": ["right_wrist"], "swingLimitDeg": 160, "twistLimitDeg": 90 },
+    { "id": "handR", "bone": "j_te_r", "child": ["j_naka_a_r"], "from": ["right_wrist"], "to": ["right_index", "right_pinky"], "swingLimitDeg": 80, "twistLimitDeg": 60 },
+
+    { "id": "thighL", "bone": "j_asi_a_l", "child": ["j_asi_b_l"], "from": ["left_hip"], "to": ["left_knee"], "swingLimitDeg": 120, "twistLimitDeg": 60, "expect": [0, -1, 0], "expectTolDeg": 60 },
+    { "id": "shinL", "bone": "j_asi_b_l", "child": ["j_asi_c_l"], "from": ["left_knee"], "to": ["left_ankle"], "swingLimitDeg": 150, "twistLimitDeg": 10, "expect": [0, -1, 0], "expectTolDeg": 60 },
+    { "id": "footL", "bone": "j_asi_c_l", "child": ["j_asi_d_l"], "from": ["left_heel"], "to": ["left_foot_index"], "swingLimitDeg": 70, "twistLimitDeg": 20 },
+
+    { "id": "thighR", "bone": "j_asi_a_r", "child": ["j_asi_b_r"], "from": ["right_hip"], "to": ["right_knee"], "swingLimitDeg": 120, "twistLimitDeg": 60, "expect": [0, -1, 0], "expectTolDeg": 60 },
+    { "id": "shinR", "bone": "j_asi_b_r", "child": ["j_asi_c_r"], "from": ["right_knee"], "to": ["right_ankle"], "swingLimitDeg": 150, "twistLimitDeg": 10, "expect": [0, -1, 0], "expectTolDeg": 60 },
+    { "id": "footR", "bone": "j_asi_c_r", "child": ["j_asi_d_r"], "from": ["right_heel"], "to": ["right_foot_index"], "swingLimitDeg": 70, "twistLimitDeg": 20 }
+  ]
+}
